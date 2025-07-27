@@ -149,74 +149,74 @@ void GDEntireDomainWithParticularities::fillIn(Cell* cell) const
     // cell->getMixture()->setVelocity(perturbedVelocity);
     // }
 
-    //5. Rayleigh-Taylor instability
-    //------------------------------
-    // // Sinus shape parameters
-    // const double pi = std::acos(-1); // Pi constant
+    // 5. Rayleigh-Taylor instability
+    // ------------------------------
+    // Sinus shape parameters
+    const double pi = std::acos(-1); // Pi constant
     
-    // // * R-T same kinematic viscosity
-    // double lambda = 0.2;             // Width of the domain
-    // double h = 0.7;                  // Height of the interface
+    // * R-T same kinematic viscosity
+    double lambda = 0.2;             // Width of the domain
+    double h = 0.7;                  // Height of the interface
 
     // // * R-T same dynamic viscosity
     // double lambda = 2.5;             // Width of the domain
     // double h = 12.5;                 // Height of the interface
 
-    // double k = 2 * pi / lambda;      // Wave-number
-    // int nx = 1000;                   // Nb of points to plot interface function
-    // double dx = lambda / (nx - 1.);  // Points spacing for the plot of the interface fn 
-    // double amp = 0.05 / k;           // Amplitude of the sinus function
+    double k = 2 * pi / lambda;      // Wave-number
+    int nx = 1000;                   // Nb of points to plot interface function
+    double dx = lambda / (nx - 1.);  // Points spacing for the plot of the interface fn 
+    double amp = 0.05 / k;           // Amplitude of the sinus function
 
-    // double rhoHeavy = cell->getPhase(0)->getDensity(),
-    //   rhoLight = cell->getPhase(1)->getDensity();
-    // std::vector<double> alpha(2, 0.);
+    double rhoHeavy = cell->getPhase(0)->getDensity(),
+      rhoLight = cell->getPhase(1)->getDensity();
+    std::vector<double> alpha(2, 0.);
     
-    // // Hydrostatic pressure
-    // double pref = 1.e5, pinterface = pref, pressure = 0.;
+    // Hydrostatic pressure
+    double pref = 1.e5, pinterface = pref, pressure = 0.;
 
-    // // * R-T same kinematic viscosity
-    // double g = 9.81, ly = 1.2;
+    // * R-T same kinematic viscosity
+    double g = 9.81, ly = 1.2;
 
     // // * R-T same dynamic viscosity
     // double g = 1., ly = 25.; 
 
-    // std::vector<double> interfaceX, interfaceY; // Interface fn coordinates
-    // for (int i = 0; i < nx; i++) {
-    //   interfaceX.push_back(i * dx);
-    //   interfaceY.push_back(amp * std::sin(2. * pi * interfaceX[i] / lambda + pi / 2.) + h);
-    // }
+    std::vector<double> interfaceX, interfaceY; // Interface fn coordinates
+    for (int i = 0; i < nx; i++) {
+      interfaceX.push_back(i * dx);
+      interfaceY.push_back(amp * std::sin(2. * pi * interfaceX[i] / lambda + pi / 2.) + h);
+    }
 
-    // int index = 0;
+    int index = 0;
     
-    // if (cell->getElement() != 0) {
-    //   Coord posElement(cell->getPosition());
-    //   double minVal = 1.;
-    //   for (unsigned int i = 0; i < interfaceX.size(); i++) { // Find nearest index corresponding to x-position of interface fn
-    //     if (std::abs(posElement.getX() - interfaceX[i]) < minVal) { 
-    //       minVal = std::abs(posElement.getX() - interfaceX[i]);
-    //       index = i;
-    //     }
-    //   }
+    if (cell->getElement() != 0) {
+      Coord posElement(cell->getPosition());
+      double minVal = 1.;
+      for (unsigned int i = 0; i < interfaceX.size(); i++) { // Find nearest index corresponding to x-position of interface fn
+        if (std::abs(posElement.getX() - interfaceX[i]) < minVal) { 
+          minVal = std::abs(posElement.getX() - interfaceX[i]);
+          index = i;
+        }
+      }
 
-    //   // Check location to interface and initialize domain accordingly
-    //   if (posElement.getY() > interfaceY[index]) {
-	  //   alpha[0] = 1.;
-	  //   alpha[1] = 0.;
-    //   pressure = pref + rhoHeavy * g * (ly - posElement.getY());
-    //   }
-    //   else {
-    //     alpha[0] = 0.;
-    //     alpha[1] = 1.;
-    //     pinterface = pref + rhoHeavy * g * (ly - interfaceY[index]);
-    //     pressure = pinterface + rhoLight * g * (interfaceY[index] - posElement.getY());
-    //   }
+      // Check location to interface and initialize domain accordingly
+      if (posElement.getY() > interfaceY[index]) {
+	    alpha[0] = 1.;
+	    alpha[1] = 0.;
+      pressure = pref + rhoHeavy * g * (ly - posElement.getY());
+      }
+      else {
+        alpha[0] = 0.;
+        alpha[1] = 1.;
+        pinterface = pref + rhoHeavy * g * (ly - interfaceY[index]);
+        pressure = pinterface + rhoLight * g * (interfaceY[index] - posElement.getY());
+      }
 
-    //   for (int k = 0; k < numberPhases; k++) { 
-    //     cell->getPhase(k)->setAlpha(alpha[k]);
-    //     cell->getPhase(k)->setPressure(pressure);
-    //   }
-    //   cell->getMixture()->setPressure(pressure);
-    // }
+      for (int k = 0; k < numberPhases; k++) { 
+        cell->getPhase(k)->setAlpha(alpha[k]);
+        cell->getPhase(k)->setPressure(pressure);
+      }
+      cell->getMixture()->setPressure(pressure);
+    }
 
     //6. Blast-wave equation
     //----------------------

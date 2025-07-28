@@ -39,10 +39,10 @@ using namespace tinyxml2;
 
 Input::Input(Run *run) : m_run(run)
 {
-	m_nameMain = "main.xml";
-	m_nameMesh = "mesh.xml";
-	m_nameCI = "initialConditions.xml";
-	m_nameModel = "model.xml";
+  m_nameMain = "main.xml";
+  m_nameMesh = "mesh.xml";
+  m_nameCI = "initialConditions.xml";
+  m_nameModel = "model.xml";
 }
 
 //***********************************************************************
@@ -79,11 +79,12 @@ void Input::inputMain(std::string casTest)
   try{
     //1) Parsing XML file with the library tinyxml2
     //---------------------------------------------
-	  std::stringstream fileName(casTest + m_nameMain);
+    std::stringstream fileName(casTest + m_nameMain);
     XMLDocument xmlMain;
     XMLError error(xmlMain.LoadFile(fileName.str().c_str())); //Le file est parse ici
     if (error != XML_SUCCESS) throw ErrorXML(fileName.str(),__FILE__, __LINE__);
     
+
     //2) Get main compute data
     //------------------------
     //Get root of XML document
@@ -91,6 +92,14 @@ void Input::inputMain(std::string casTest)
     if (computationParam == NULL) throw ErrorXMLRacine("computationParam", fileName.str(), __FILE__, __LINE__);
 
     XMLElement* element, *sousElement;
+
+    // Get initial condition type (IC type) from XML
+    element = computationParam->FirstChildElement("initialConditionType");
+    if (element != NULL && element->GetText() != NULL) {
+      m_run->m_icType = element->GetText();
+    } else {
+      m_run->m_icType = ""; // fallback if not specified
+    }
 
     //Get run name
     element = computationParam->FirstChildElement("run");
@@ -321,9 +330,9 @@ void Input::inputMesh(std::string casTest)
   try{
     //Methode AMR: initialization des variables
     m_run->m_lvlMax = 0;
-		double criteriaVar(1.e10);
-		bool varRho(false), varP(false), varU(false), varAlpha(false);
-		double xiSplit(1.), xiJoin(1.);
+    double criteriaVar(1.e10);
+    bool varRho(false), varP(false), varU(false), varAlpha(false);
+    double xiSplit(1.), xiJoin(1.);
 
     //1) Parsing XML file with the library tinyxml2
     //---------------------------------------------
@@ -370,14 +379,14 @@ void Input::inputMesh(std::string casTest)
       {
         std::string version(MUSGmsh::readVersion(meshFile));
         if (version == "2.2") {
-			    bool switchTags(false);
-			    element = meshNS->FirstChildElement("tag");
-			    if (element != NULL) {
-				    error = element->QueryBoolAttribute("GMSHSwitchTags", &switchTags);
-				    if (error != XML_NO_ERROR) throw ErrorXMLAttribut("GMSHSwitchTags", fileName.str(), __FILE__, __LINE__);
-			    }
-			    m_run->m_mesh = new MUSGmshV2(meshFile, meshExtension, switchTags);
-		    }
+          bool switchTags(false);
+          element = meshNS->FirstChildElement("tag");
+          if (element != NULL) {
+            error = element->QueryBoolAttribute("GMSHSwitchTags", &switchTags);
+            if (error != XML_NO_ERROR) throw ErrorXMLAttribut("GMSHSwitchTags", fileName.str(), __FILE__, __LINE__);
+          }
+          m_run->m_mesh = new MUSGmshV2(meshFile, meshExtension, switchTags);
+        }
         else if (version == "4.1") m_run->m_mesh = new MUSGmshV4(meshFile, meshExtension);
         else throw ErrorXML("mesh version not found for file : " + meshFile, __FILE__, __LINE__);
       }
@@ -831,7 +840,7 @@ void Input::inputModel(std::string casTest)
         }
         m_run->m_model->getRelaxations()->push_back(new RelaxationPTMu(element, nameEOS, fileName.str()));
       }
-	    else if (typeRelax == "PT") {
+      else if (typeRelax == "PT") {
         //Verify if relaxation not already added
         for (unsigned int r = 0; r < m_run->m_model->getRelaxations()->size(); r++) {
           if ((*m_run->m_model->getRelaxations())[r]->getType() == TypeRelax::PT) { throw ErrorXMLRelaxation(typeRelax, fileName.str(), __FILE__, __LINE__); }
@@ -1061,13 +1070,15 @@ void Input::inputInitialConditions(std::string casTest, std::vector<GeometricalD
       std::string typeDomaine(element->Attribute("type"));
       Tools::uppercase(typeDomaine);
       std::vector<std::string> NamesParametresDomaine;
+      // Get IC type from main.xml (via m_run)
+      std::string icType = m_run->m_icType;
       if      (typeDomaine == "ENTIREDOMAIN"){ 
         domains.push_back(new GDEntireDomain(nameDomaine, statesPhases, stateMixture, statesTransport, physicalEntity)); 
         if(physicalEntity==-1) { solidDomains.push_back(new GDEntireDomain(nameDomaine, statesPhases, stateMixture, statesTransport, physicalEntity)); }
       }
       else if (typeDomaine == "ENTIREDOMAINWITHPARTICULARITIES"){
-        domains.push_back(new GDEntireDomainWithParticularities(nameDomaine, statesPhases, stateMixture, statesTransport, physicalEntity)); 
-        if(physicalEntity==-1) {solidDomains.push_back(new GDEntireDomainWithParticularities(nameDomaine, statesPhases, stateMixture, statesTransport, physicalEntity)); }
+        domains.push_back(new GDEntireDomainWithParticularities(nameDomaine, statesPhases, stateMixture, statesTransport, physicalEntity, icType)); 
+        if(physicalEntity==-1) {solidDomains.push_back(new GDEntireDomainWithParticularities(nameDomaine, statesPhases, stateMixture, statesTransport, physicalEntity, icType)); }
       }
       else if (typeDomaine == "HALFSPACE"){
         domains.push_back(new GDHalfSpace(nameDomaine, statesPhases, stateMixture, statesTransport, element, physicalEntity, fileName.str())); 

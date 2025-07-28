@@ -1,5 +1,22 @@
+<!--
+Available initialConditionType values (IC types):
+  ic_LaplacePressureInitialization
+  ic_RespectingSpecialCoordinates
+  ic_RespectingSpecialCoordinates_AMRtest
+  ic_RandomVelocityPerturbations
+  ic_Rayleigh-TaylorInstability
+  ic_Blast-WaveEquation
+  ic_AlwaysBelong
+  ic_SpecialCoordinates_YminusX
+  ic_SpecialCoordinates_AMR
+  ic_AlwaysBelong_RandomPerturb
+  ic_AlwaysBelong_RayleighTaylor
+  ic_AlwaysBelong_BlastWave
+  ic_Default
+-->
 <?xml version = "1.0" encoding = "UTF-8" standalone = "yes"?>
 <computationParam>
+	<initialConditionType>ic_Rayleigh-TaylorInstability</initialConditionType>
 	<run>PUEqRayleighTaylorSameDynamicViscosity_test1</run>
 	<outputMode format="XML" binary="false" precision="16"/>
 	<timeControlMode iterations="false">
@@ -9,6 +26,6 @@
 	<computationControl CFL="0.6"/>
 	<restartSimulation restartFileNumber="0" AMRsaveFreq="5"/>
 	<secondOrder>
-        	<globalLimiter>mc</globalLimiter>
+			<globalLimiter>mc</globalLimiter>
 	</secondOrder>
 </computationParam>

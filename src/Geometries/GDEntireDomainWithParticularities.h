@@ -39,16 +39,23 @@ class GDEntireDomainWithParticularities :
   public GeometricalDomain
 {
 public:
+  std::vector<double> m_interfaceX, m_interfaceY;
+public:
+  std::string m_icType;
   //! \brief     Geometrical constructor for the entire geometrical domain with particularities involved
   //! \param     vecPhases      Phases vector variables to copy in geometrical domain
   //! \param     mixture        Mixture variables to copy in geometrical domain
   //! \param     vecTransports  Transports vector varaiables to copy in geometrical domain
   //! \param     physicalEntity physical entity number relative to mesh generation (see mesh tool)
-  GDEntireDomainWithParticularities(std::string name, std::vector<Phase*> vecPhases, Mixture* mixture, std::vector<Transport> vecTransports, const int& physicalEntity);
+  //! \param     icType         Initial condition type string
+  GDEntireDomainWithParticularities(std::string name, std::vector<Phase*> vecPhases, Mixture* mixture, std::vector<Transport> vecTransports, const int& physicalEntity, const std::string& icType);
   virtual ~GDEntireDomainWithParticularities();
 
   virtual bool belong(Coord& /*posElement*/, const int& /*lvl*/) const;
   virtual void fillIn(Cell* cell) const;
+
+private:
+  void initializeRayleighTaylorInterface();
 };
 
 #endif //GDENTIREDOMAINWITHPARTICULARITIES_H

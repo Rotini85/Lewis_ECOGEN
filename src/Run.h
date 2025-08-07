@@ -62,7 +62,6 @@ class Run;
 class Run
 {
   public:
-    std::string m_icType; // Initial condition type string, set from XML
     Run(std::string nameCasTest, const int& number);
     ~Run();
 

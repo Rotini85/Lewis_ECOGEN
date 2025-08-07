@@ -16,7 +16,6 @@ Available initialConditionType values (IC types):
 -->
 <?xml version = "1.0" encoding = "UTF-8" standalone = "yes"?>
 <computationParam>
-	<initialConditionType>ic_Rayleigh-TaylorInstability</initialConditionType>
 	<run>PUEqRayleighTaylorSameDynamicViscosity_test1</run>
 	<outputMode format="XML" binary="false" precision="16"/>
 	<timeControlMode iterations="false">

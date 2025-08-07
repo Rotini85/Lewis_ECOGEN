@@ -9,6 +9,6 @@
 	<computationControl CFL="0.6"/>
 	<restartSimulation restartFileNumber="0" AMRsaveFreq="5"/>
 	<secondOrder>
-        	<globalLimiter>mc</globalLimiter>
+		<globalLimiter>mc</globalLimiter>
 	</secondOrder>
 </computationParam>

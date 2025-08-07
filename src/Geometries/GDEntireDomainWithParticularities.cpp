@@ -154,13 +154,13 @@ void GDEntireDomainWithParticularities::fillIn(Cell* cell) const
     // Sinus shape parameters
     const double pi = std::acos(-1); // Pi constant
     
-    // * R-T same kinematic viscosity
-    double lambda = 0.2;             // Width of the domain
-    double h = 0.7;                  // Height of the interface
+    // // * R-T same kinematic viscosity
+    // double lambda = 0.2;             // Width of the domain
+    // double h = 0.7;                  // Height of the interface
 
-    // // * R-T same dynamic viscosity
-    // double lambda = 2.5;             // Width of the domain
-    // double h = 12.5;                 // Height of the interface
+    // * R-T same dynamic viscosity
+    double lambda = 2.5;             // Width of the domain
+    double h = 12.5;                 // Height of the interface
 
     double k = 2 * pi / lambda;      // Wave-number
     int nx = 1000;                   // Nb of points to plot interface function
@@ -174,11 +174,11 @@ void GDEntireDomainWithParticularities::fillIn(Cell* cell) const
     // Hydrostatic pressure
     double pref = 1.e5, pinterface = pref, pressure = 0.;
 
-    // * R-T same kinematic viscosity
-    double g = 9.81, ly = 1.2;
+    // // * R-T same kinematic viscosity
+    // double g = 9.81, ly = 1.2;
 
-    // // * R-T same dynamic viscosity
-    // double g = 1., ly = 25.; 
+    // * R-T same dynamic viscosity
+    double g = 1., ly = 25.; 
 
     std::vector<double> interfaceX, interfaceY; // Interface fn coordinates
     for (int i = 0; i < nx; i++) {

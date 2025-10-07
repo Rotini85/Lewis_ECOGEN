@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<VTKFile type="Collection" version="0.1" byte_order="LittleEndian" compressor="vtkZLibDataCompressor">
+    <Collection>
+        <DataSet timestep="0" part="0" file="datasets/result_CPU0_TIME0.vtu"/>
+        <DataSet timestep="0" part="1" file="datasets/result_CPU1_TIME0.vtu"/>
+        <DataSet timestep="0" part="2" file="datasets/result_CPU2_TIME0.vtu"/>
+        <DataSet timestep="0" part="3" file="datasets/result_CPU3_TIME0.vtu"/>
+        <DataSet timestep="0" part="4" file="datasets/result_CPU4_TIME0.vtu"/>
+        <DataSet timestep="0" part="5" file="datasets/result_CPU5_TIME0.vtu"/>
+        <DataSet timestep="0" part="6" file="datasets/result_CPU6_TIME0.vtu"/>
+        <DataSet timestep="0" part="7" file="datasets/result_CPU7_TIME0.vtu"/>
+        <DataSet timestep="0" part="8" file="datasets/result_CPU8_TIME0.vtu"/>
+        <DataSet timestep="0" part="9" file="datasets/result_CPU9_TIME0.vtu"/>
+        <DataSet timestep="0" part="10" file="datasets/result_CPU10_TIME0.vtu"/>
+        <DataSet timestep="0" part="11" file="datasets/result_CPU11_TIME0.vtu"/>
+        <DataSet timestep="0" part="12" file="datasets/result_CPU12_TIME0.vtu"/>
+        <DataSet timestep="0" part="13" file="datasets/result_CPU13_TIME0.vtu"/>
+    </Collection>
+</VTKFile>

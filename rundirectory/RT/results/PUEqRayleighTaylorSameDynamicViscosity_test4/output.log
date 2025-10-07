@@ -1,0 +1,322 @@
+--------------------------------------------------------------------------
+PMIx was unable to find a usable compression library
+on the system. We will therefore be unable to compress
+large data streams. This may result in longer-than-normal
+startup times and larger memory footprints. We will
+continue, but strongly recommend installing zlib or
+a comparable compression library for better user experience.
+
+You can suppress this warning by adding "pcompress_base_silence_warning=1"
+to your PMIx MCA default parameter file, or by adding
+"PMIX_MCA_pcompress_base_silence_warning=1" to your environment.
+--------------------------------------------------------------------------
+************************************************************
+
+    ,---.     ,--,    .---.     ,--,    ,---.    .-. .-. 
+    | .-'   .' .')   / .-. )  .' .'     | .-'    |  \| | 
+    | `-.   |  |(_)  | | |(_) |  |  __  | `-.    |   | | 
+    | .-'   \  \     | | | |  \  \ ( _) | .-'    | |\  | 
+    |  `--.  \  `-.  \ `-' /   \  `-) ) |  `--.  | | |)| 
+    /( __.'   \____\  )---'    )\____/  /( __.'  /(  (_) 
+   (__)              (_)      (__)     (__)     (__)     
+   Official webSite: https://code-mphi.github.io/ECOGEN/
+
+************************************************************
+           EXECUTION OF THE TEST CASE NUMBER: 1
+************************************************************
+T1 | Test case: ./rundirectory/RT//libtest/
+T1 | Number of CPU: 14
+T1 | Printing file number: 0...  OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 1, ITERATION 234
+T1 |     Physical time       = 1.00361e-09 s 
+T1 |     Last time step      = 4.30767e-12 s 
+T1 |     Elapsed time        = 1 min 34 s 
+T1 |     AMR time            = 16.9071 s 
+T1 |     Communication time  = 2.51281 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 1... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 2, ITERATION 466
+T1 |     Physical time       = 2.00255e-09 s 
+T1 |     Last time step      = 4.30622e-12 s 
+T1 |     Elapsed time        = 3 min 21 s 
+T1 |     AMR time            = 27.2706 s 
+T1 |     Communication time  = 4.93561 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 2... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 3, ITERATION 698
+T1 |     Physical time       = 3.00147e-09 s 
+T1 |     Last time step      = 4.30348e-12 s 
+T1 |     Elapsed time        = 4 min 58 s 
+T1 |     AMR time            = 30.0576 s 
+T1 |     Communication time  = 7.60491 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 3... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 4, ITERATION 930
+T1 |     Physical time       = 4.00006e-09 s 
+T1 |     Last time step      = 4.30472e-12 s 
+T1 |     Elapsed time        = 6 min 35 s 
+T1 |     AMR time            = 32.8644 s 
+T1 |     Communication time  = 10.3091 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 4... OK
+T1 | Iteration 1000 / Timestep 4.30303e-12 / Progress 14.3378%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 5, ITERATION 1163
+T1 |     Physical time       = 5.00257e-09 s 
+T1 |     Last time step      = 4.30253e-12 s 
+T1 |     Elapsed time        = 8 min 28 s 
+T1 |     AMR time            = 43.5098 s 
+T1 |     Communication time  = 12.9781 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 5... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 6, ITERATION 1395
+T1 |     Physical time       = 6.00077e-09 s 
+T1 |     Last time step      = 4.30059e-12 s 
+T1 |     Elapsed time        = 10 min 20 s 
+T1 |     AMR time            = 50.3502 s 
+T1 |     Communication time  = 15.6496 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 6... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 7, ITERATION 1628
+T1 |     Physical time       = 7.00282e-09 s 
+T1 |     Last time step      = 4.30023e-12 s 
+T1 |     Elapsed time        = 12 min 17 s 
+T1 |     AMR time            = 57.2115 s 
+T1 |     Communication time  = 18.2886 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 7... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 8, ITERATION 1861
+T1 |     Physical time       = 8.00415e-09 s 
+T1 |     Last time step      = 4.29572e-12 s 
+T1 |     Elapsed time        = 14 min 27 s 
+T1 |     AMR time            = 1 min 4 s 
+T1 |     Communication time  = 20.6524 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 8... OK
+T1 | Iteration 2000 / Timestep 4.29193e-12 / Progress 28.6699%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 9, ITERATION 2093
+T1 |     Physical time       = 9.00011e-09 s 
+T1 |     Last time step      = 4.29216e-12 s 
+T1 |     Elapsed time        = 16 min 54 s 
+T1 |     AMR time            = 1 min 15 s 
+T1 |     Communication time  = 22.7656 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 9... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 10, ITERATION 2327
+T1 |     Physical time       = 1.00041e-08 s 
+T1 |     Last time step      = 4.28702e-12 s 
+T1 |     Elapsed time        = 19 min 32 s 
+T1 |     AMR time            = 1 min 23 s 
+T1 |     Communication time  = 24.9069 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 10... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 11, ITERATION 2560
+T1 |     Physical time       = 1.10028e-08 s 
+T1 |     Last time step      = 4.28521e-12 s 
+T1 |     Elapsed time        = 22 min 32 s 
+T1 |     AMR time            = 1 min 32 s 
+T1 |     Communication time  = 26.9415 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 11... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 12, ITERATION 2793
+T1 |     Physical time       = 1.20003e-08 s 
+T1 |     Last time step      = 4.27911e-12 s 
+T1 |     Elapsed time        = 25 min 51 s 
+T1 |     AMR time            = 1 min 49 s 
+T1 |     Communication time  = 29.0653 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 12... OK
+T1 | Iteration 3000 / Timestep 4.27588e-12 / Progress 42.9532%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 13, ITERATION 3027
+T1 |     Physical time       = 1.30014e-08 s 
+T1 |     Last time step      = 4.27495e-12 s 
+T1 |     Elapsed time        = 29 min 5 s 
+T1 |     AMR time            = 1 min 59 s 
+T1 |     Communication time  = 31.3888 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 13... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 14, ITERATION 3261
+T1 |     Physical time       = 1.40013e-08 s 
+T1 |     Last time step      = 4.27285e-12 s 
+T1 |     Elapsed time        = 32 min 32 s 
+T1 |     AMR time            = 2 min 17 s 
+T1 |     Communication time  = 33.8266 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 14... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 15, ITERATION 3495
+T1 |     Physical time       = 1.50003e-08 s 
+T1 |     Last time step      = 4.26638e-12 s 
+T1 |     Elapsed time        = 36 min 4 s 
+T1 |     AMR time            = 2 min 31 s 
+T1 |     Communication time  = 36.4035 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 15... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 16, ITERATION 3730
+T1 |     Physical time       = 1.60029e-08 s 
+T1 |     Last time step      = 4.26408e-12 s 
+T1 |     Elapsed time        = 39 min 38 s 
+T1 |     AMR time            = 2 min 45 s 
+T1 |     Communication time  = 39.3533 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 16... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 17, ITERATION 3964
+T1 |     Physical time       = 1.7e-08 s 
+T1 |     Last time step      = 4.26095e-12 s 
+T1 |     Elapsed time        = 43 min 26 s 
+T1 |     AMR time            = 3 min 3 s 
+T1 |     Communication time  = 42.8197 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 17... OK
+T1 | Iteration 4000 / Timestep 4.26093e-12 / Progress 57.1781%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 18, ITERATION 4199
+T1 |     Physical time       = 1.80008e-08 s 
+T1 |     Last time step      = 4.25506e-12 s 
+T1 |     Elapsed time        = 47 min 26 s 
+T1 |     AMR time            = 3 min 21 s 
+T1 |     Communication time  = 46.6483 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 18... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 19, ITERATION 4434
+T1 |     Physical time       = 1.90006e-08 s 
+T1 |     Last time step      = 4.25328e-12 s 
+T1 |     Elapsed time        = 51 min 20 s 
+T1 |     AMR time            = 3 min 31 s 
+T1 |     Communication time  = 50.5823 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 19... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 20, ITERATION 4670
+T1 |     Physical time       = 2.00034e-08 s 
+T1 |     Last time step      = 4.24689e-12 s 
+T1 |     Elapsed time        = 55 min 29 s 
+T1 |     AMR time            = 3 min 50 s 
+T1 |     Communication time  = 54.4836 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 20... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 21, ITERATION 4905
+T1 |     Physical time       = 2.1001e-08 s 
+T1 |     Last time step      = 4.24101e-12 s 
+T1 |     Elapsed time        = 59 min 30 s 
+T1 |     AMR time            = 3 min 59 s 
+T1 |     Communication time  = 58.4713 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 21... OK
+T1 | Iteration 5000 / Timestep 4.23819e-12 / Progress 71.3458%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 22, ITERATION 5141
+T1 |     Physical time       = 2.20013e-08 s 
+T1 |     Last time step      = 4.237e-12 s 
+T1 |     Elapsed time        = 1 h 3 min 53 s 
+T1 |     AMR time            = 4 min 18 s 
+T1 |     Communication time  = 1 min 3 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 22... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 23, ITERATION 5377
+T1 |     Physical time       = 2.30001e-08 s 
+T1 |     Last time step      = 4.22775e-12 s 
+T1 |     Elapsed time        = 1 h 8 min 18 s 
+T1 |     AMR time            = 4 min 42 s 
+T1 |     Communication time  = 1 min 9 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 23... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 24, ITERATION 5614
+T1 |     Physical time       = 2.40017e-08 s 
+T1 |     Last time step      = 4.22479e-12 s 
+T1 |     Elapsed time        = 1 h 12 min 39 s 
+T1 |     AMR time            = 5 min 0 s 
+T1 |     Communication time  = 1 min 15 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 24... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 25, ITERATION 5851
+T1 |     Physical time       = 2.50025e-08 s 
+T1 |     Last time step      = 4.22262e-12 s 
+T1 |     Elapsed time        = 1 h 17 min 8 s 
+T1 |     AMR time            = 5 min 20 s 
+T1 |     Communication time  = 1 min 22 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 25... OK
+T1 | Iteration 6000 / Timestep 4.2204e-12 / Progress 85.4386%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 26, ITERATION 6088
+T1 |     Physical time       = 2.60028e-08 s 
+T1 |     Last time step      = 4.21786e-12 s 
+T1 |     Elapsed time        = 1 h 21 min 48 s 
+T1 |     AMR time            = 5 min 42 s 
+T1 |     Communication time  = 1 min 29 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 26... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 27, ITERATION 6325
+T1 |     Physical time       = 2.70024e-08 s 
+T1 |     Last time step      = 4.21686e-12 s 
+T1 |     Elapsed time        = 1 h 26 min 51 s 
+T1 |     AMR time            = 6 min 10 s 
+T1 |     Communication time  = 1 min 36 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 27... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 28, ITERATION 6562
+T1 |     Physical time       = 2.80011e-08 s 
+T1 |     Last time step      = 4.21189e-12 s 
+T1 |     Elapsed time        = 1 h 31 min 46 s 
+T1 |     AMR time            = 6 min 21 s 
+T1 |     Communication time  = 1 min 43 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 28... OK
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 29, ITERATION 6800
+T1 |     Physical time       = 2.90029e-08 s 
+T1 |     Last time step      = 4.20615e-12 s 
+T1 |     Elapsed time        = 1 h 36 min 53 s 
+T1 |     AMR time            = 6 min 41 s 
+T1 |     Communication time  = 1 min 49 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 29... OK
+T1 | Iteration 7000 / Timestep 4.20231e-12 / Progress 99.4789%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 30, ITERATION 7038
+T1 |     Physical time       = 3.00033e-08 s 
+T1 |     Last time step      = 4.20161e-12 s 
+T1 |     Elapsed time        = 1 h 42 min 17 s 
+T1 |     AMR time            = 7 min 10 s 
+T1 |     Communication time  = 1 min 54 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 30... OK
+T1 | -------------------------------------------
+T1 | Final local load on CPU 8 : 7446
+T1 | Final local load on CPU 0 : 7409
+T1 | Final local load on CPU 10 : 7410
+T1 | Final local load on CPU 3 : 7410
+T1 | Final local load on CPU 1 : 7410
+T1 | Final local load on CPU 2 : 7410
+T1 | Final local load on CPU 11 : 7410
+T1 | Final local load on CPU 4 : 7410
+T1 | Final local load on CPU 9 : 7410
+T1 | Final local load on CPU 5 : 7365
+T1 | Final local load on CPU 12 : 7409
+T1 | Final local load on CPU 7 : 7434
+T1 | Final local load on CPU 6 : 7466
+T1 | Final local load on CPU 13 : 7412
+ 

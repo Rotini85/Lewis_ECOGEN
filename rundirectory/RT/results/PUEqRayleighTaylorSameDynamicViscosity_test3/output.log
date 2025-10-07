@@ -1,0 +1,901 @@
+--------------------------------------------------------------------------
+PMIx was unable to find a usable compression library
+on the system. We will therefore be unable to compress
+large data streams. This may result in longer-than-normal
+startup times and larger memory footprints. We will
+continue, but strongly recommend installing zlib or
+a comparable compression library for better user experience.
+
+You can suppress this warning by adding "pcompress_base_silence_warning=1"
+to your PMIx MCA default parameter file, or by adding
+"PMIX_MCA_pcompress_base_silence_warning=1" to your environment.
+--------------------------------------------------------------------------
+************************************************************
+
+    ,---.     ,--,    .---.     ,--,    ,---.    .-. .-. 
+    | .-'   .' .')   / .-. )  .' .'     | .-'    |  \| | 
+    | `-.   |  |(_)  | | |(_) |  |  __  | `-.    |   | | 
+    | .-'   \  \     | | | |  \  \ ( _) | .-'    | |\  | 
+    |  `--.  \  `-.  \ `-' /   \  `-) ) |  `--.  | | |)| 
+    /( __.'   \____\  )---'    )\____/  /( __.'  /(  (_) 
+   (__)              (_)      (__)     (__)     (__)     
+   Official webSite: https://code-mphi.github.io/ECOGEN/
+
+************************************************************
+           EXECUTION OF THE TEST CASE NUMBER: 1
+************************************************************
+T1 | Test case: ./rundirectory/RT//libtest/
+T1 | Number of CPU: 14
+T1 | Printing file number: 0...  OK
+T1 | Iteration 1000 / Timestep 5.90561e-06 / Progress 0.0589972%
+T1 | Iteration 2000 / Timestep 5.90565e-06 / Progress 0.118053%
+T1 | Iteration 3000 / Timestep 5.90564e-06 / Progress 0.17711%
+T1 | Iteration 4000 / Timestep 5.90564e-06 / Progress 0.236166%
+T1 | Iteration 5000 / Timestep 5.90564e-06 / Progress 0.295223%
+T1 | Iteration 6000 / Timestep 5.90564e-06 / Progress 0.354279%
+T1 | Iteration 7000 / Timestep 5.90566e-06 / Progress 0.413336%
+T1 | Iteration 8000 / Timestep 5.90565e-06 / Progress 0.472392%
+T1 | Iteration 9000 / Timestep 5.90565e-06 / Progress 0.531449%
+T1 | Iteration 10000 / Timestep 5.90565e-06 / Progress 0.590505%
+T1 | Iteration 11000 / Timestep 5.90565e-06 / Progress 0.649562%
+T1 | Iteration 12000 / Timestep 5.90565e-06 / Progress 0.708618%
+T1 | Iteration 13000 / Timestep 5.90566e-06 / Progress 0.767675%
+T1 | Iteration 14000 / Timestep 5.90565e-06 / Progress 0.826731%
+T1 | Iteration 15000 / Timestep 5.90565e-06 / Progress 0.885788%
+T1 | Iteration 16000 / Timestep 5.90565e-06 / Progress 0.944844%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 1, ITERATION 16934
+T1 |     Physical time       = 0.1 s 
+T1 |     Last time step      = 5.90565e-06 s 
+T1 |     Elapsed time        = 1 h 34 min 23 s 
+T1 |     AMR time            = 3 min 10 s 
+T1 |     Communication time  = 3 min 0 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 1... OK
+T1 | Iteration 17000 / Timestep 5.90565e-06 / Progress 1.0039%
+T1 | Iteration 18000 / Timestep 5.90565e-06 / Progress 1.06296%
+T1 | Iteration 19000 / Timestep 5.90565e-06 / Progress 1.12201%
+T1 | Iteration 20000 / Timestep 5.90565e-06 / Progress 1.18107%
+T1 | Iteration 21000 / Timestep 5.90565e-06 / Progress 1.24013%
+T1 | Iteration 22000 / Timestep 5.90565e-06 / Progress 1.29918%
+T1 | Iteration 23000 / Timestep 5.90565e-06 / Progress 1.35824%
+T1 | Iteration 24000 / Timestep 5.90565e-06 / Progress 1.4173%
+T1 | Iteration 25000 / Timestep 5.90565e-06 / Progress 1.47635%
+T1 | Iteration 26000 / Timestep 5.90565e-06 / Progress 1.53541%
+T1 | Iteration 27000 / Timestep 5.90565e-06 / Progress 1.59447%
+T1 | Iteration 28000 / Timestep 5.90564e-06 / Progress 1.65352%
+T1 | Iteration 29000 / Timestep 5.90564e-06 / Progress 1.71258%
+T1 | Iteration 30000 / Timestep 5.90564e-06 / Progress 1.77164%
+T1 | Iteration 31000 / Timestep 5.90564e-06 / Progress 1.83069%
+T1 | Iteration 32000 / Timestep 5.90564e-06 / Progress 1.88975%
+T1 | Iteration 33000 / Timestep 5.90564e-06 / Progress 1.9488%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 2, ITERATION 33867
+T1 |     Physical time       = 0.200001 s 
+T1 |     Last time step      = 5.90563e-06 s 
+T1 |     Elapsed time        = 3 h 8 min 53 s 
+T1 |     AMR time            = 6 min 10 s 
+T1 |     Communication time  = 6 min 1 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 2... OK
+T1 | Iteration 34000 / Timestep 5.90563e-06 / Progress 2.00786%
+T1 | Iteration 35000 / Timestep 5.90563e-06 / Progress 2.06692%
+T1 | Iteration 36000 / Timestep 5.90563e-06 / Progress 2.12597%
+T1 | Iteration 37000 / Timestep 5.90563e-06 / Progress 2.18503%
+T1 | Iteration 38000 / Timestep 5.90563e-06 / Progress 2.24409%
+T1 | Iteration 39000 / Timestep 5.90563e-06 / Progress 2.30314%
+T1 | Iteration 40000 / Timestep 5.90562e-06 / Progress 2.3622%
+T1 | Iteration 41000 / Timestep 5.90562e-06 / Progress 2.42125%
+T1 | Iteration 42000 / Timestep 5.90562e-06 / Progress 2.48031%
+T1 | Iteration 43000 / Timestep 5.90562e-06 / Progress 2.53937%
+T1 | Iteration 44000 / Timestep 5.90562e-06 / Progress 2.59842%
+T1 | Iteration 45000 / Timestep 5.90562e-06 / Progress 2.65748%
+T1 | Iteration 46000 / Timestep 5.90561e-06 / Progress 2.71654%
+T1 | Iteration 47000 / Timestep 5.90561e-06 / Progress 2.77559%
+T1 | Iteration 48000 / Timestep 5.90561e-06 / Progress 2.83465%
+T1 | Iteration 49000 / Timestep 5.90561e-06 / Progress 2.8937%
+T1 | Iteration 50000 / Timestep 5.90561e-06 / Progress 2.95276%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 3, ITERATION 50800
+T1 |     Physical time       = 0.3 s 
+T1 |     Last time step      = 5.90561e-06 s 
+T1 |     Elapsed time        = 4 h 43 min 51 s 
+T1 |     AMR time            = 9 min 10 s 
+T1 |     Communication time  = 9 min 3 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 3... OK
+T1 | Iteration 51000 / Timestep 5.90561e-06 / Progress 3.01182%
+T1 | Iteration 52000 / Timestep 5.9056e-06 / Progress 3.07087%
+T1 | Iteration 53000 / Timestep 5.9056e-06 / Progress 3.12993%
+T1 | Iteration 54000 / Timestep 5.9056e-06 / Progress 3.18898%
+T1 | Iteration 55000 / Timestep 5.9056e-06 / Progress 3.24804%
+T1 | Iteration 56000 / Timestep 5.9056e-06 / Progress 3.3071%
+T1 | Iteration 57000 / Timestep 5.90559e-06 / Progress 3.36615%
+T1 | Iteration 58000 / Timestep 5.90559e-06 / Progress 3.42521%
+T1 | Iteration 59000 / Timestep 5.90559e-06 / Progress 3.48426%
+T1 | Iteration 60000 / Timestep 5.90559e-06 / Progress 3.54332%
+T1 | Iteration 61000 / Timestep 5.90559e-06 / Progress 3.60238%
+T1 | Iteration 62000 / Timestep 5.90559e-06 / Progress 3.66143%
+T1 | Iteration 63000 / Timestep 5.90558e-06 / Progress 3.72049%
+T1 | Iteration 64000 / Timestep 5.90558e-06 / Progress 3.77954%
+T1 | Iteration 65000 / Timestep 5.90558e-06 / Progress 3.8386%
+T1 | Iteration 66000 / Timestep 5.90558e-06 / Progress 3.89765%
+T1 | Iteration 67000 / Timestep 5.90558e-06 / Progress 3.95671%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 4, ITERATION 67734
+T1 |     Physical time       = 0.400006 s 
+T1 |     Last time step      = 5.90558e-06 s 
+T1 |     Elapsed time        = 6 h 19 min 27 s 
+T1 |     AMR time            = 12 min 20 s 
+T1 |     Communication time  = 12 min 14 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 4... OK
+T1 | Iteration 68000 / Timestep 5.90558e-06 / Progress 4.01577%
+T1 | Iteration 69000 / Timestep 5.90557e-06 / Progress 4.07482%
+T1 | Iteration 70000 / Timestep 5.90557e-06 / Progress 4.13388%
+T1 | Iteration 71000 / Timestep 5.90557e-06 / Progress 4.19293%
+T1 | Iteration 72000 / Timestep 5.90557e-06 / Progress 4.25199%
+T1 | Iteration 73000 / Timestep 5.90557e-06 / Progress 4.31104%
+T1 | Iteration 74000 / Timestep 5.90556e-06 / Progress 4.3701%
+T1 | Iteration 75000 / Timestep 5.90556e-06 / Progress 4.42916%
+T1 | Iteration 76000 / Timestep 5.90556e-06 / Progress 4.48821%
+T1 | Iteration 77000 / Timestep 5.90556e-06 / Progress 4.54727%
+T1 | Iteration 78000 / Timestep 5.90556e-06 / Progress 4.60632%
+T1 | Iteration 79000 / Timestep 5.90556e-06 / Progress 4.66538%
+T1 | Iteration 80000 / Timestep 5.90555e-06 / Progress 4.72443%
+T1 | Iteration 81000 / Timestep 5.90555e-06 / Progress 4.78349%
+T1 | Iteration 82000 / Timestep 5.90555e-06 / Progress 4.84255%
+T1 | Iteration 83000 / Timestep 5.90555e-06 / Progress 4.9016%
+T1 | Iteration 84000 / Timestep 5.90555e-06 / Progress 4.96066%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 5, ITERATION 84667
+T1 |     Physical time       = 0.500005 s 
+T1 |     Last time step      = 5.90554e-06 s 
+T1 |     Elapsed time        = 8 h 0 min 33 s 
+T1 |     AMR time            = 15 min 31 s 
+T1 |     Communication time  = 15 min 32 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 5... OK
+T1 | Iteration 85000 / Timestep 5.90554e-06 / Progress 5.01971%
+T1 | Iteration 86000 / Timestep 5.90554e-06 / Progress 5.07877%
+T1 | Iteration 87000 / Timestep 5.90554e-06 / Progress 5.13782%
+T1 | Iteration 88000 / Timestep 5.90554e-06 / Progress 5.19688%
+T1 | Iteration 89000 / Timestep 5.90554e-06 / Progress 5.25593%
+T1 | Iteration 90000 / Timestep 5.90553e-06 / Progress 5.31499%
+T1 | Iteration 91000 / Timestep 5.90553e-06 / Progress 5.37404%
+T1 | Iteration 92000 / Timestep 5.90553e-06 / Progress 5.4331%
+T1 | Iteration 93000 / Timestep 5.90553e-06 / Progress 5.49215%
+T1 | Iteration 94000 / Timestep 5.90553e-06 / Progress 5.55121%
+T1 | Iteration 95000 / Timestep 5.90552e-06 / Progress 5.61026%
+T1 | Iteration 96000 / Timestep 5.90552e-06 / Progress 5.66932%
+T1 | Iteration 97000 / Timestep 5.90552e-06 / Progress 5.72838%
+T1 | Iteration 98000 / Timestep 5.90552e-06 / Progress 5.78743%
+T1 | Iteration 99000 / Timestep 5.90551e-06 / Progress 5.84649%
+T1 | Iteration 100000 / Timestep 5.90551e-06 / Progress 5.90554%
+T1 | Iteration 101000 / Timestep 5.90551e-06 / Progress 5.9646%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 6, ITERATION 101600
+T1 |     Physical time       = 0.600003 s 
+T1 |     Last time step      = 5.90551e-06 s 
+T1 |     Elapsed time        = 9 h 37 min 25 s 
+T1 |     AMR time            = 18 min 29 s 
+T1 |     Communication time  = 18 min 33 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 6... OK
+T1 | Iteration 102000 / Timestep 5.90551e-06 / Progress 6.02365%
+T1 | Iteration 103000 / Timestep 5.90551e-06 / Progress 6.08271%
+T1 | Iteration 104000 / Timestep 5.9055e-06 / Progress 6.14176%
+T1 | Iteration 105000 / Timestep 5.9055e-06 / Progress 6.20082%
+T1 | Iteration 106000 / Timestep 5.9055e-06 / Progress 6.25987%
+T1 | Iteration 107000 / Timestep 5.9055e-06 / Progress 6.31893%
+T1 | Iteration 108000 / Timestep 5.9055e-06 / Progress 6.37798%
+T1 | Iteration 109000 / Timestep 5.90549e-06 / Progress 6.43704%
+T1 | Iteration 110000 / Timestep 5.90549e-06 / Progress 6.49609%
+T1 | Iteration 111000 / Timestep 5.90549e-06 / Progress 6.55515%
+T1 | Iteration 112000 / Timestep 5.90549e-06 / Progress 6.6142%
+T1 | Iteration 113000 / Timestep 5.90548e-06 / Progress 6.67326%
+T1 | Iteration 114000 / Timestep 5.90548e-06 / Progress 6.73231%
+T1 | Iteration 115000 / Timestep 5.90548e-06 / Progress 6.79137%
+T1 | Iteration 116000 / Timestep 5.90548e-06 / Progress 6.85042%
+T1 | Iteration 117000 / Timestep 5.90547e-06 / Progress 6.90947%
+T1 | Iteration 118000 / Timestep 5.90547e-06 / Progress 6.96853%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 7, ITERATION 118533
+T1 |     Physical time       = 0.700001 s 
+T1 |     Last time step      = 5.90547e-06 s 
+T1 |     Elapsed time        = 11 h 15 min 21 s 
+T1 |     AMR time            = 21 min 30 s 
+T1 |     Communication time  = 21 min 36 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 7... OK
+T1 | Iteration 119000 / Timestep 5.90547e-06 / Progress 7.02758%
+T1 | Iteration 120000 / Timestep 5.90547e-06 / Progress 7.08664%
+T1 | Iteration 121000 / Timestep 5.90546e-06 / Progress 7.14569%
+T1 | Iteration 122000 / Timestep 5.90546e-06 / Progress 7.20475%
+T1 | Iteration 123000 / Timestep 5.90546e-06 / Progress 7.2638%
+T1 | Iteration 124000 / Timestep 5.90546e-06 / Progress 7.32286%
+T1 | Iteration 125000 / Timestep 5.90545e-06 / Progress 7.38191%
+T1 | Iteration 126000 / Timestep 5.90545e-06 / Progress 7.44097%
+T1 | Iteration 127000 / Timestep 5.90545e-06 / Progress 7.50002%
+T1 | Iteration 128000 / Timestep 5.90545e-06 / Progress 7.55908%
+T1 | Iteration 129000 / Timestep 5.90544e-06 / Progress 7.61813%
+T1 | Iteration 130000 / Timestep 5.90544e-06 / Progress 7.67718%
+T1 | Iteration 131000 / Timestep 5.90544e-06 / Progress 7.73624%
+T1 | Iteration 132000 / Timestep 5.90544e-06 / Progress 7.79529%
+T1 | Iteration 133000 / Timestep 5.90543e-06 / Progress 7.85435%
+T1 | Iteration 134000 / Timestep 5.90543e-06 / Progress 7.9134%
+T1 | Iteration 135000 / Timestep 5.90543e-06 / Progress 7.97246%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 8, ITERATION 135467
+T1 |     Physical time       = 0.800003 s 
+T1 |     Last time step      = 5.90543e-06 s 
+T1 |     Elapsed time        = 12 h 55 min 44 s 
+T1 |     AMR time            = 24 min 33 s 
+T1 |     Communication time  = 24 min 45 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 8... OK
+T1 | Iteration 136000 / Timestep 5.90543e-06 / Progress 8.03151%
+T1 | Iteration 137000 / Timestep 5.90542e-06 / Progress 8.09056%
+T1 | Iteration 138000 / Timestep 5.90542e-06 / Progress 8.14962%
+T1 | Iteration 139000 / Timestep 5.90542e-06 / Progress 8.20867%
+T1 | Iteration 140000 / Timestep 5.90541e-06 / Progress 8.26773%
+T1 | Iteration 141000 / Timestep 5.90541e-06 / Progress 8.32678%
+T1 | Iteration 142000 / Timestep 5.90541e-06 / Progress 8.38584%
+T1 | Iteration 143000 / Timestep 5.90541e-06 / Progress 8.44489%
+T1 | Iteration 144000 / Timestep 5.9054e-06 / Progress 8.50394%
+T1 | Iteration 145000 / Timestep 5.9054e-06 / Progress 8.563%
+T1 | Iteration 146000 / Timestep 5.9054e-06 / Progress 8.62205%
+T1 | Iteration 147000 / Timestep 5.90539e-06 / Progress 8.68111%
+T1 | Iteration 148000 / Timestep 5.90539e-06 / Progress 8.74016%
+T1 | Iteration 149000 / Timestep 5.90539e-06 / Progress 8.79921%
+T1 | Iteration 150000 / Timestep 5.90539e-06 / Progress 8.85827%
+T1 | Iteration 151000 / Timestep 5.90538e-06 / Progress 8.91732%
+T1 | Iteration 152000 / Timestep 5.90538e-06 / Progress 8.97637%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 9, ITERATION 152401
+T1 |     Physical time       = 0.900006 s 
+T1 |     Last time step      = 5.90538e-06 s 
+T1 |     Elapsed time        = 14 h 37 min 31 s 
+T1 |     AMR time            = 27 min 40 s 
+T1 |     Communication time  = 27 min 52 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 9... OK
+T1 | Iteration 153000 / Timestep 5.90538e-06 / Progress 9.03543%
+T1 | Iteration 154000 / Timestep 5.90537e-06 / Progress 9.09448%
+T1 | Iteration 155000 / Timestep 5.90537e-06 / Progress 9.15354%
+T1 | Iteration 156000 / Timestep 5.90537e-06 / Progress 9.21259%
+T1 | Iteration 157000 / Timestep 5.90536e-06 / Progress 9.27164%
+T1 | Iteration 158000 / Timestep 5.90536e-06 / Progress 9.3307%
+T1 | Iteration 159000 / Timestep 5.90536e-06 / Progress 9.38975%
+T1 | Iteration 160000 / Timestep 5.90535e-06 / Progress 9.4488%
+T1 | Iteration 161000 / Timestep 5.90535e-06 / Progress 9.50786%
+T1 | Iteration 162000 / Timestep 5.90535e-06 / Progress 9.56691%
+T1 | Iteration 163000 / Timestep 5.90534e-06 / Progress 9.62596%
+T1 | Iteration 164000 / Timestep 5.90534e-06 / Progress 9.68502%
+T1 | Iteration 165000 / Timestep 5.90534e-06 / Progress 9.74407%
+T1 | Iteration 166000 / Timestep 5.90533e-06 / Progress 9.80312%
+T1 | Iteration 167000 / Timestep 5.90533e-06 / Progress 9.86218%
+T1 | Iteration 168000 / Timestep 5.90533e-06 / Progress 9.92123%
+T1 | Iteration 169000 / Timestep 5.90532e-06 / Progress 9.98028%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 10, ITERATION 169334
+T1 |     Physical time       = 1 s 
+T1 |     Last time step      = 5.90532e-06 s 
+T1 |     Elapsed time        = 16 h 22 min 24 s 
+T1 |     AMR time            = 30 min 48 s 
+T1 |     Communication time  = 30 min 52 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 10... OK
+T1 | Iteration 170000 / Timestep 5.90532e-06 / Progress 10.0393%
+T1 | Iteration 171000 / Timestep 5.90532e-06 / Progress 10.0984%
+T1 | Iteration 172000 / Timestep 5.90531e-06 / Progress 10.1574%
+T1 | Iteration 173000 / Timestep 5.90531e-06 / Progress 10.2165%
+T1 | Iteration 174000 / Timestep 5.9053e-06 / Progress 10.2756%
+T1 | Iteration 175000 / Timestep 5.9053e-06 / Progress 10.3346%
+T1 | Iteration 176000 / Timestep 5.9053e-06 / Progress 10.3937%
+T1 | Iteration 177000 / Timestep 5.90529e-06 / Progress 10.4527%
+T1 | Iteration 178000 / Timestep 5.90529e-06 / Progress 10.5118%
+T1 | Iteration 179000 / Timestep 5.90529e-06 / Progress 10.5708%
+T1 | Iteration 180000 / Timestep 5.90528e-06 / Progress 10.6299%
+T1 | Iteration 181000 / Timestep 5.90528e-06 / Progress 10.6889%
+T1 | Iteration 182000 / Timestep 5.90527e-06 / Progress 10.748%
+T1 | Iteration 183000 / Timestep 5.90527e-06 / Progress 10.807%
+T1 | Iteration 184000 / Timestep 5.90527e-06 / Progress 10.8661%
+T1 | Iteration 185000 / Timestep 5.90526e-06 / Progress 10.9251%
+T1 | Iteration 186000 / Timestep 5.90526e-06 / Progress 10.9842%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 11, ITERATION 186268
+T1 |     Physical time       = 1.1 s 
+T1 |     Last time step      = 5.90526e-06 s 
+T1 |     Elapsed time        = 18 h 8 min 53 s 
+T1 |     AMR time            = 33 min 57 s 
+T1 |     Communication time  = 33 min 44 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 11... OK
+T1 | Iteration 187000 / Timestep 5.90525e-06 / Progress 11.0432%
+T1 | Iteration 188000 / Timestep 5.90525e-06 / Progress 11.1023%
+T1 | Iteration 189000 / Timestep 5.90525e-06 / Progress 11.1613%
+T1 | Iteration 190000 / Timestep 5.90524e-06 / Progress 11.2204%
+T1 | Iteration 191000 / Timestep 5.90524e-06 / Progress 11.2794%
+T1 | Iteration 192000 / Timestep 5.90523e-06 / Progress 11.3385%
+T1 | Iteration 193000 / Timestep 5.90523e-06 / Progress 11.3976%
+T1 | Iteration 194000 / Timestep 5.90522e-06 / Progress 11.4566%
+T1 | Iteration 195000 / Timestep 5.90522e-06 / Progress 11.5157%
+T1 | Iteration 196000 / Timestep 5.90521e-06 / Progress 11.5747%
+T1 | Iteration 197000 / Timestep 5.90521e-06 / Progress 11.6338%
+T1 | Iteration 198000 / Timestep 5.9052e-06 / Progress 11.6928%
+T1 | Iteration 199000 / Timestep 5.9052e-06 / Progress 11.7519%
+T1 | Iteration 200000 / Timestep 5.9052e-06 / Progress 11.8109%
+T1 | Iteration 201000 / Timestep 5.90519e-06 / Progress 11.87%
+T1 | Iteration 202000 / Timestep 5.90519e-06 / Progress 11.929%
+T1 | Iteration 203000 / Timestep 5.90518e-06 / Progress 11.9881%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 12, ITERATION 203202
+T1 |     Physical time       = 1.2 s 
+T1 |     Last time step      = 5.90518e-06 s 
+T1 |     Elapsed time        = 19 h 56 min 13 s 
+T1 |     AMR time            = 37 min 6 s 
+T1 |     Communication time  = 36 min 24 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 12... OK
+T1 | Iteration 204000 / Timestep 5.90518e-06 / Progress 12.0471%
+T1 | Iteration 205000 / Timestep 5.90517e-06 / Progress 12.1062%
+T1 | Iteration 206000 / Timestep 5.90517e-06 / Progress 12.1652%
+T1 | Iteration 207000 / Timestep 5.90516e-06 / Progress 12.2243%
+T1 | Iteration 208000 / Timestep 5.90516e-06 / Progress 12.2833%
+T1 | Iteration 209000 / Timestep 5.90515e-06 / Progress 12.3424%
+T1 | Iteration 210000 / Timestep 5.90515e-06 / Progress 12.4014%
+T1 | Iteration 211000 / Timestep 5.90514e-06 / Progress 12.4605%
+T1 | Iteration 212000 / Timestep 5.90513e-06 / Progress 12.5195%
+T1 | Iteration 213000 / Timestep 5.90513e-06 / Progress 12.5786%
+T1 | Iteration 214000 / Timestep 5.90512e-06 / Progress 12.6376%
+T1 | Iteration 215000 / Timestep 5.90512e-06 / Progress 12.6967%
+T1 | Iteration 216000 / Timestep 5.90511e-06 / Progress 12.7557%
+T1 | Iteration 217000 / Timestep 5.90511e-06 / Progress 12.8148%
+T1 | Iteration 218000 / Timestep 5.9051e-06 / Progress 12.8738%
+T1 | Iteration 219000 / Timestep 5.9051e-06 / Progress 12.9329%
+T1 | Iteration 220000 / Timestep 5.90509e-06 / Progress 12.9919%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 13, ITERATION 220137
+T1 |     Physical time       = 1.3 s 
+T1 |     Last time step      = 5.90509e-06 s 
+T1 |     Elapsed time        = 21 h 45 min 16 s 
+T1 |     AMR time            = 40 min 16 s 
+T1 |     Communication time  = 38 min 56 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 13... OK
+T1 | Iteration 221000 / Timestep 5.90508e-06 / Progress 13.051%
+T1 | Iteration 222000 / Timestep 5.90508e-06 / Progress 13.11%
+T1 | Iteration 223000 / Timestep 5.90507e-06 / Progress 13.1691%
+T1 | Iteration 224000 / Timestep 5.90507e-06 / Progress 13.2281%
+T1 | Iteration 225000 / Timestep 5.90506e-06 / Progress 13.2872%
+T1 | Iteration 226000 / Timestep 5.90505e-06 / Progress 13.3462%
+T1 | Iteration 227000 / Timestep 5.90505e-06 / Progress 13.4053%
+T1 | Iteration 228000 / Timestep 5.90504e-06 / Progress 13.4644%
+T1 | Iteration 229000 / Timestep 5.90504e-06 / Progress 13.5234%
+T1 | Iteration 230000 / Timestep 5.90503e-06 / Progress 13.5825%
+T1 | Iteration 231000 / Timestep 5.90502e-06 / Progress 13.6415%
+T1 | Iteration 232000 / Timestep 5.90502e-06 / Progress 13.7006%
+T1 | Iteration 233000 / Timestep 5.90501e-06 / Progress 13.7596%
+T1 | Iteration 234000 / Timestep 5.905e-06 / Progress 13.8187%
+T1 | Iteration 235000 / Timestep 5.905e-06 / Progress 13.8777%
+T1 | Iteration 236000 / Timestep 5.90499e-06 / Progress 13.9368%
+T1 | Iteration 237000 / Timestep 5.90498e-06 / Progress 13.9958%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 14, ITERATION 237072
+T1 |     Physical time       = 1.40001 s 
+T1 |     Last time step      = 5.90498e-06 s 
+T1 |     Elapsed time        = 23 h 35 min 10 s 
+T1 |     AMR time            = 43 min 25 s 
+T1 |     Communication time  = 41 min 18 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 14... OK
+T1 | Iteration 238000 / Timestep 5.90498e-06 / Progress 14.0549%
+T1 | Iteration 239000 / Timestep 5.90497e-06 / Progress 14.1139%
+T1 | Iteration 240000 / Timestep 5.90496e-06 / Progress 14.173%
+T1 | Iteration 241000 / Timestep 5.90496e-06 / Progress 14.232%
+T1 | Iteration 242000 / Timestep 5.90495e-06 / Progress 14.291%
+T1 | Iteration 243000 / Timestep 5.90494e-06 / Progress 14.3501%
+T1 | Iteration 244000 / Timestep 5.90494e-06 / Progress 14.4091%
+T1 | Iteration 245000 / Timestep 5.90493e-06 / Progress 14.4682%
+T1 | Iteration 246000 / Timestep 5.90492e-06 / Progress 14.5272%
+T1 | Iteration 247000 / Timestep 5.90491e-06 / Progress 14.5863%
+T1 | Iteration 248000 / Timestep 5.90491e-06 / Progress 14.6453%
+T1 | Iteration 249000 / Timestep 5.9049e-06 / Progress 14.7044%
+T1 | Iteration 250000 / Timestep 5.90489e-06 / Progress 14.7634%
+T1 | Iteration 251000 / Timestep 5.90488e-06 / Progress 14.8225%
+T1 | Iteration 252000 / Timestep 5.90488e-06 / Progress 14.8815%
+T1 | Iteration 253000 / Timestep 5.90487e-06 / Progress 14.9406%
+T1 | Iteration 254000 / Timestep 5.90486e-06 / Progress 14.9996%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 15, ITERATION 254007
+T1 |     Physical time       = 1.50001 s 
+T1 |     Last time step      = 5.90486e-06 s 
+T1 |     Elapsed time        = 25 h 27 min 18 s 
+T1 |     AMR time            = 46 min 39 s 
+T1 |     Communication time  = 43 min 36 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 15... OK
+T1 | Iteration 255000 / Timestep 5.90485e-06 / Progress 15.0587%
+T1 | Iteration 256000 / Timestep 5.90485e-06 / Progress 15.1177%
+T1 | Iteration 257000 / Timestep 5.90484e-06 / Progress 15.1768%
+T1 | Iteration 258000 / Timestep 5.90483e-06 / Progress 15.2358%
+T1 | Iteration 259000 / Timestep 5.90482e-06 / Progress 15.2949%
+T1 | Iteration 260000 / Timestep 5.90481e-06 / Progress 15.3539%
+T1 | Iteration 261000 / Timestep 5.9048e-06 / Progress 15.413%
+T1 | Iteration 262000 / Timestep 5.9048e-06 / Progress 15.472%
+T1 | Iteration 263000 / Timestep 5.90479e-06 / Progress 15.5311%
+T1 | Iteration 264000 / Timestep 5.90478e-06 / Progress 15.5901%
+T1 | Iteration 265000 / Timestep 5.90477e-06 / Progress 15.6492%
+T1 | Iteration 266000 / Timestep 5.90476e-06 / Progress 15.7082%
+T1 | Iteration 267000 / Timestep 5.90475e-06 / Progress 15.7673%
+T1 | Iteration 268000 / Timestep 5.90474e-06 / Progress 15.8263%
+T1 | Iteration 269000 / Timestep 5.90474e-06 / Progress 15.8854%
+T1 | Iteration 270000 / Timestep 5.90473e-06 / Progress 15.9444%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 16, ITERATION 270942
+T1 |     Physical time       = 1.6 s 
+T1 |     Last time step      = 5.90472e-06 s 
+T1 |     Elapsed time        = 27 h 20 min 52 s 
+T1 |     AMR time            = 49 min 50 s 
+T1 |     Communication time  = 45 min 47 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 16... OK
+T1 | Iteration 271000 / Timestep 5.90472e-06 / Progress 16.0035%
+T1 | Iteration 272000 / Timestep 5.90471e-06 / Progress 16.0625%
+T1 | Iteration 273000 / Timestep 5.9047e-06 / Progress 16.1215%
+T1 | Iteration 274000 / Timestep 5.90469e-06 / Progress 16.1806%
+T1 | Iteration 275000 / Timestep 5.90468e-06 / Progress 16.2396%
+T1 | Iteration 276000 / Timestep 5.90467e-06 / Progress 16.2987%
+T1 | Iteration 277000 / Timestep 5.90466e-06 / Progress 16.3577%
+T1 | Iteration 278000 / Timestep 5.90465e-06 / Progress 16.4168%
+T1 | Iteration 279000 / Timestep 5.90464e-06 / Progress 16.4758%
+T1 | Iteration 280000 / Timestep 5.90463e-06 / Progress 16.5349%
+T1 | Iteration 281000 / Timestep 5.90462e-06 / Progress 16.5939%
+T1 | Iteration 282000 / Timestep 5.90461e-06 / Progress 16.653%
+T1 | Iteration 283000 / Timestep 5.9046e-06 / Progress 16.712%
+T1 | Iteration 284000 / Timestep 5.90459e-06 / Progress 16.7711%
+T1 | Iteration 285000 / Timestep 5.90458e-06 / Progress 16.8301%
+T1 | Iteration 286000 / Timestep 5.90457e-06 / Progress 16.8892%
+T1 | Iteration 287000 / Timestep 5.90456e-06 / Progress 16.9482%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 17, ITERATION 287878
+T1 |     Physical time       = 1.7 s 
+T1 |     Last time step      = 5.90455e-06 s 
+T1 |     Elapsed time        = 29 h 15 min 27 s 
+T1 |     AMR time            = 53 min 2 s 
+T1 |     Communication time  = 47 min 53 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 17... OK
+T1 | Iteration 288000 / Timestep 5.90455e-06 / Progress 17.0072%
+T1 | Iteration 289000 / Timestep 5.90454e-06 / Progress 17.0663%
+T1 | Iteration 290000 / Timestep 5.90453e-06 / Progress 17.1253%
+T1 | Iteration 291000 / Timestep 5.90452e-06 / Progress 17.1844%
+T1 | Iteration 292000 / Timestep 5.90451e-06 / Progress 17.2434%
+T1 | Iteration 293000 / Timestep 5.9045e-06 / Progress 17.3025%
+T1 | Iteration 294000 / Timestep 5.90449e-06 / Progress 17.3615%
+T1 | Iteration 295000 / Timestep 5.90447e-06 / Progress 17.4206%
+T1 | Iteration 296000 / Timestep 5.90446e-06 / Progress 17.4796%
+T1 | Iteration 297000 / Timestep 5.90445e-06 / Progress 17.5386%
+T1 | Iteration 298000 / Timestep 5.90444e-06 / Progress 17.5977%
+T1 | Iteration 299000 / Timestep 5.90443e-06 / Progress 17.6567%
+T1 | Iteration 300000 / Timestep 5.90442e-06 / Progress 17.7158%
+T1 | Iteration 301000 / Timestep 5.90441e-06 / Progress 17.7748%
+T1 | Iteration 302000 / Timestep 5.90439e-06 / Progress 17.8339%
+T1 | Iteration 303000 / Timestep 5.90438e-06 / Progress 17.8929%
+T1 | Iteration 304000 / Timestep 5.90437e-06 / Progress 17.952%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 18, ITERATION 304814
+T1 |     Physical time       = 1.8 s 
+T1 |     Last time step      = 5.90436e-06 s 
+T1 |     Elapsed time        = 31 h 13 min 12 s 
+T1 |     AMR time            = 56 min 16 s 
+T1 |     Communication time  = 49 min 52 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 18... OK
+T1 | Iteration 305000 / Timestep 5.90436e-06 / Progress 18.011%
+T1 | Iteration 306000 / Timestep 5.90435e-06 / Progress 18.07%
+T1 | Iteration 307000 / Timestep 5.90433e-06 / Progress 18.1291%
+T1 | Iteration 308000 / Timestep 5.90432e-06 / Progress 18.1881%
+T1 | Iteration 309000 / Timestep 5.90431e-06 / Progress 18.2472%
+T1 | Iteration 310000 / Timestep 5.9043e-06 / Progress 18.3062%
+T1 | Iteration 311000 / Timestep 5.90428e-06 / Progress 18.3653%
+T1 | Iteration 312000 / Timestep 5.90427e-06 / Progress 18.4243%
+T1 | Iteration 313000 / Timestep 5.90426e-06 / Progress 18.4833%
+T1 | Iteration 314000 / Timestep 5.90424e-06 / Progress 18.5424%
+T1 | Iteration 315000 / Timestep 5.90423e-06 / Progress 18.6014%
+T1 | Iteration 316000 / Timestep 5.90422e-06 / Progress 18.6605%
+T1 | Iteration 317000 / Timestep 5.9042e-06 / Progress 18.7195%
+T1 | Iteration 318000 / Timestep 5.90419e-06 / Progress 18.7786%
+T1 | Iteration 319000 / Timestep 5.90418e-06 / Progress 18.8376%
+T1 | Iteration 320000 / Timestep 5.90416e-06 / Progress 18.8966%
+T1 | Iteration 321000 / Timestep 5.90415e-06 / Progress 18.9557%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 19, ITERATION 321751
+T1 |     Physical time       = 1.9 s 
+T1 |     Last time step      = 5.90414e-06 s 
+T1 |     Elapsed time        = 33 h 13 min 38 s 
+T1 |     AMR time            = 59 min 34 s 
+T1 |     Communication time  = 51 min 45 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 19... OK
+T1 | Iteration 322000 / Timestep 5.90414e-06 / Progress 19.0147%
+T1 | Iteration 323000 / Timestep 5.90412e-06 / Progress 19.0738%
+T1 | Iteration 324000 / Timestep 5.90411e-06 / Progress 19.1328%
+T1 | Iteration 325000 / Timestep 5.90409e-06 / Progress 19.1918%
+T1 | Iteration 326000 / Timestep 5.90408e-06 / Progress 19.2509%
+T1 | Iteration 327000 / Timestep 5.90406e-06 / Progress 19.3099%
+T1 | Iteration 328000 / Timestep 5.90405e-06 / Progress 19.369%
+T1 | Iteration 329000 / Timestep 5.90404e-06 / Progress 19.428%
+T1 | Iteration 330000 / Timestep 5.90402e-06 / Progress 19.487%
+T1 | Iteration 331000 / Timestep 5.90401e-06 / Progress 19.5461%
+T1 | Iteration 332000 / Timestep 5.90399e-06 / Progress 19.6051%
+T1 | Iteration 333000 / Timestep 5.90398e-06 / Progress 19.6642%
+T1 | Iteration 334000 / Timestep 5.90396e-06 / Progress 19.7232%
+T1 | Iteration 335000 / Timestep 5.90394e-06 / Progress 19.7822%
+T1 | Iteration 336000 / Timestep 5.90393e-06 / Progress 19.8413%
+T1 | Iteration 337000 / Timestep 5.90391e-06 / Progress 19.9003%
+T1 | Iteration 338000 / Timestep 5.9039e-06 / Progress 19.9594%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 20, ITERATION 338689
+T1 |     Physical time       = 2 s 
+T1 |     Last time step      = 5.90389e-06 s 
+T1 |     Elapsed time        = 35 h 17 min 31 s 
+T1 |     AMR time            = 1 h 2 min 59 s 
+T1 |     Communication time  = 53 min 41 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 20... OK
+T1 | Iteration 339000 / Timestep 5.90388e-06 / Progress 20.0184%
+T1 | Iteration 340000 / Timestep 5.90387e-06 / Progress 20.0774%
+T1 | Iteration 341000 / Timestep 5.90385e-06 / Progress 20.1365%
+T1 | Iteration 342000 / Timestep 5.90383e-06 / Progress 20.1955%
+T1 | Iteration 343000 / Timestep 5.90382e-06 / Progress 20.2546%
+T1 | Iteration 344000 / Timestep 5.9038e-06 / Progress 20.3136%
+T1 | Iteration 345000 / Timestep 5.90378e-06 / Progress 20.3726%
+T1 | Iteration 346000 / Timestep 5.90377e-06 / Progress 20.4317%
+T1 | Iteration 347000 / Timestep 5.90375e-06 / Progress 20.4907%
+T1 | Iteration 348000 / Timestep 5.90373e-06 / Progress 20.5497%
+T1 | Iteration 349000 / Timestep 5.90372e-06 / Progress 20.6088%
+T1 | Iteration 350000 / Timestep 5.9037e-06 / Progress 20.6678%
+T1 | Iteration 351000 / Timestep 5.90368e-06 / Progress 20.7269%
+T1 | Iteration 352000 / Timestep 5.90367e-06 / Progress 20.7859%
+T1 | Iteration 353000 / Timestep 5.90365e-06 / Progress 20.8449%
+T1 | Iteration 354000 / Timestep 5.90363e-06 / Progress 20.904%
+T1 | Iteration 355000 / Timestep 5.90361e-06 / Progress 20.963%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 21, ITERATION 355627
+T1 |     Physical time       = 2.1 s 
+T1 |     Last time step      = 5.9036e-06 s 
+T1 |     Elapsed time        = 37 h 27 min 18 s 
+T1 |     AMR time            = 1 h 6 min 32 s 
+T1 |     Communication time  = 55 min 47 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 21... OK
+T1 | Iteration 356000 / Timestep 5.90359e-06 / Progress 21.022%
+T1 | Iteration 357000 / Timestep 5.90358e-06 / Progress 21.0811%
+T1 | Iteration 358000 / Timestep 5.90356e-06 / Progress 21.1401%
+T1 | Iteration 359000 / Timestep 5.90354e-06 / Progress 21.1991%
+T1 | Iteration 360000 / Timestep 5.90352e-06 / Progress 21.2582%
+T1 | Iteration 361000 / Timestep 5.9035e-06 / Progress 21.3172%
+T1 | Iteration 362000 / Timestep 5.90349e-06 / Progress 21.3763%
+T1 | Iteration 363000 / Timestep 5.90347e-06 / Progress 21.4353%
+T1 | Iteration 364000 / Timestep 5.90345e-06 / Progress 21.4943%
+T1 | Iteration 365000 / Timestep 5.90343e-06 / Progress 21.5534%
+T1 | Iteration 366000 / Timestep 5.90341e-06 / Progress 21.6124%
+T1 | Iteration 367000 / Timestep 5.90339e-06 / Progress 21.6714%
+T1 | Iteration 368000 / Timestep 5.90337e-06 / Progress 21.7305%
+T1 | Iteration 369000 / Timestep 5.90335e-06 / Progress 21.7895%
+T1 | Iteration 370000 / Timestep 5.90333e-06 / Progress 21.8485%
+T1 | Iteration 371000 / Timestep 5.90331e-06 / Progress 21.9076%
+T1 | Iteration 372000 / Timestep 5.90329e-06 / Progress 21.9666%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 22, ITERATION 372566
+T1 |     Physical time       = 2.2 s 
+T1 |     Last time step      = 5.90328e-06 s 
+T1 |     Elapsed time        = 39 h 41 min 22 s 
+T1 |     AMR time            = 1 h 10 min 9 s 
+T1 |     Communication time  = 57 min 41 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 22... OK
+T1 | Iteration 373000 / Timestep 5.90327e-06 / Progress 22.0256%
+T1 | Iteration 374000 / Timestep 5.90325e-06 / Progress 22.0847%
+T1 | Iteration 375000 / Timestep 5.90323e-06 / Progress 22.1437%
+T1 | Iteration 376000 / Timestep 5.90321e-06 / Progress 22.2027%
+T1 | Iteration 377000 / Timestep 5.90319e-06 / Progress 22.2618%
+T1 | Iteration 378000 / Timestep 5.90317e-06 / Progress 22.3208%
+T1 | Iteration 379000 / Timestep 5.90315e-06 / Progress 22.3798%
+T1 | Iteration 380000 / Timestep 5.90313e-06 / Progress 22.4388%
+T1 | Iteration 381000 / Timestep 5.90311e-06 / Progress 22.4979%
+T1 | Iteration 382000 / Timestep 5.90309e-06 / Progress 22.5569%
+T1 | Iteration 383000 / Timestep 5.90307e-06 / Progress 22.6159%
+T1 | Iteration 384000 / Timestep 5.90305e-06 / Progress 22.675%
+T1 | Iteration 385000 / Timestep 5.90303e-06 / Progress 22.734%
+T1 | Iteration 386000 / Timestep 5.903e-06 / Progress 22.793%
+T1 | Iteration 387000 / Timestep 5.90298e-06 / Progress 22.8521%
+T1 | Iteration 388000 / Timestep 5.90296e-06 / Progress 22.9111%
+T1 | Iteration 389000 / Timestep 5.90294e-06 / Progress 22.9701%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 23, ITERATION 389507
+T1 |     Physical time       = 2.3 s 
+T1 |     Last time step      = 5.90293e-06 s 
+T1 |     Elapsed time        = 41 h 58 min 49 s 
+T1 |     AMR time            = 1 h 13 min 48 s 
+T1 |     Communication time  = 59 min 27 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 23... OK
+T1 | Iteration 390000 / Timestep 5.90292e-06 / Progress 23.0292%
+T1 | Iteration 391000 / Timestep 5.9029e-06 / Progress 23.0882%
+T1 | Iteration 392000 / Timestep 5.90287e-06 / Progress 23.1472%
+T1 | Iteration 393000 / Timestep 5.90285e-06 / Progress 23.2062%
+T1 | Iteration 394000 / Timestep 5.90283e-06 / Progress 23.2653%
+T1 | Iteration 395000 / Timestep 5.90281e-06 / Progress 23.3243%
+T1 | Iteration 396000 / Timestep 5.90279e-06 / Progress 23.3833%
+T1 | Iteration 397000 / Timestep 5.90277e-06 / Progress 23.4423%
+T1 | Iteration 398000 / Timestep 5.90275e-06 / Progress 23.5014%
+T1 | Iteration 399000 / Timestep 5.90272e-06 / Progress 23.5604%
+T1 | Iteration 400000 / Timestep 5.9027e-06 / Progress 23.6194%
+T1 | Iteration 401000 / Timestep 5.90268e-06 / Progress 23.6785%
+T1 | Iteration 402000 / Timestep 5.90266e-06 / Progress 23.7375%
+T1 | Iteration 403000 / Timestep 5.90264e-06 / Progress 23.7965%
+T1 | Iteration 404000 / Timestep 5.90261e-06 / Progress 23.8555%
+T1 | Iteration 405000 / Timestep 5.90259e-06 / Progress 23.9146%
+T1 | Iteration 406000 / Timestep 5.90257e-06 / Progress 23.9736%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 24, ITERATION 406448
+T1 |     Physical time       = 2.4 s 
+T1 |     Last time step      = 5.90256e-06 s 
+T1 |     Elapsed time        = 44 h 21 min 10 s 
+T1 |     AMR time            = 1 h 17 min 37 s 
+T1 |     Communication time  = 1 h 1 min 25 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 24... OK
+T1 | Iteration 407000 / Timestep 5.90255e-06 / Progress 24.0326%
+T1 | Iteration 408000 / Timestep 5.90253e-06 / Progress 24.0916%
+T1 | Iteration 409000 / Timestep 5.90251e-06 / Progress 24.1507%
+T1 | Iteration 410000 / Timestep 5.90249e-06 / Progress 24.2097%
+T1 | Iteration 411000 / Timestep 5.90247e-06 / Progress 24.2687%
+T1 | Iteration 412000 / Timestep 5.90245e-06 / Progress 24.3277%
+T1 | Iteration 413000 / Timestep 5.90242e-06 / Progress 24.3868%
+T1 | Iteration 414000 / Timestep 5.9024e-06 / Progress 24.4458%
+T1 | Iteration 415000 / Timestep 5.90238e-06 / Progress 24.5048%
+T1 | Iteration 416000 / Timestep 5.90236e-06 / Progress 24.5638%
+T1 | Iteration 417000 / Timestep 5.90234e-06 / Progress 24.6229%
+T1 | Iteration 418000 / Timestep 5.90232e-06 / Progress 24.6819%
+T1 | Iteration 419000 / Timestep 5.90229e-06 / Progress 24.7409%
+T1 | Iteration 420000 / Timestep 5.90227e-06 / Progress 24.7999%
+T1 | Iteration 421000 / Timestep 5.90225e-06 / Progress 24.859%
+T1 | Iteration 422000 / Timestep 5.90223e-06 / Progress 24.918%
+T1 | Iteration 423000 / Timestep 5.90221e-06 / Progress 24.977%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 25, ITERATION 423390
+T1 |     Physical time       = 2.5 s 
+T1 |     Last time step      = 5.9022e-06 s 
+T1 |     Elapsed time        = 46 h 49 min 13 s 
+T1 |     AMR time            = 1 h 21 min 29 s 
+T1 |     Communication time  = 1 h 3 min 16 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 25... OK
+T1 | Iteration 424000 / Timestep 5.90219e-06 / Progress 25.036%
+T1 | Iteration 425000 / Timestep 5.90217e-06 / Progress 25.095%
+T1 | Iteration 426000 / Timestep 5.90215e-06 / Progress 25.1541%
+T1 | Iteration 427000 / Timestep 5.90212e-06 / Progress 25.2131%
+T1 | Iteration 428000 / Timestep 5.9021e-06 / Progress 25.2721%
+T1 | Iteration 429000 / Timestep 5.90208e-06 / Progress 25.3311%
+T1 | Iteration 430000 / Timestep 5.90206e-06 / Progress 25.3901%
+T1 | Iteration 431000 / Timestep 5.90204e-06 / Progress 25.4492%
+T1 | Iteration 432000 / Timestep 5.90202e-06 / Progress 25.5082%
+T1 | Iteration 433000 / Timestep 5.902e-06 / Progress 25.5672%
+T1 | Iteration 434000 / Timestep 5.90198e-06 / Progress 25.6262%
+T1 | Iteration 435000 / Timestep 5.90196e-06 / Progress 25.6852%
+T1 | Iteration 436000 / Timestep 5.90194e-06 / Progress 25.7443%
+T1 | Iteration 437000 / Timestep 5.90192e-06 / Progress 25.8033%
+T1 | Iteration 438000 / Timestep 5.9019e-06 / Progress 25.8623%
+T1 | Iteration 439000 / Timestep 5.90189e-06 / Progress 25.9213%
+T1 | Iteration 440000 / Timestep 5.90187e-06 / Progress 25.9803%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 26, ITERATION 440334
+T1 |     Physical time       = 2.60001 s 
+T1 |     Last time step      = 5.90185e-06 s 
+T1 |     Elapsed time        = 49 h 25 min 40 s 
+T1 |     AMR time            = 1 h 25 min 33 s 
+T1 |     Communication time  = 1 h 5 min 6 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 26... OK
+T1 | Iteration 441000 / Timestep 5.90185e-06 / Progress 26.0394%
+T1 | Iteration 442000 / Timestep 5.90183e-06 / Progress 26.0984%
+T1 | Iteration 443000 / Timestep 5.90179e-06 / Progress 26.1574%
+T1 | Iteration 444000 / Timestep 5.90177e-06 / Progress 26.2164%
+T1 | Iteration 445000 / Timestep 5.90175e-06 / Progress 26.2754%
+T1 | Iteration 446000 / Timestep 5.90173e-06 / Progress 26.3344%
+T1 | Iteration 447000 / Timestep 5.90171e-06 / Progress 26.3935%
+T1 | Iteration 448000 / Timestep 5.90169e-06 / Progress 26.4525%
+T1 | Iteration 449000 / Timestep 5.90167e-06 / Progress 26.5115%
+T1 | Iteration 450000 / Timestep 5.90165e-06 / Progress 26.5705%
+T1 | Iteration 451000 / Timestep 5.90165e-06 / Progress 26.6295%
+T1 | Iteration 452000 / Timestep 5.90163e-06 / Progress 26.6885%
+T1 | Iteration 453000 / Timestep 5.90161e-06 / Progress 26.7476%
+T1 | Iteration 454000 / Timestep 5.90159e-06 / Progress 26.8066%
+T1 | Iteration 455000 / Timestep 5.90157e-06 / Progress 26.8656%
+T1 | Iteration 456000 / Timestep 5.90155e-06 / Progress 26.9246%
+T1 | Iteration 457000 / Timestep 5.90153e-06 / Progress 26.9836%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 27, ITERATION 457278
+T1 |     Physical time       = 2.7 s 
+T1 |     Last time step      = 5.90152e-06 s 
+T1 |     Elapsed time        = 52 h 9 min 41 s 
+T1 |     AMR time            = 1 h 29 min 43 s 
+T1 |     Communication time  = 1 h 6 min 55 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 27... OK
+T1 | Iteration 458000 / Timestep 5.90151e-06 / Progress 27.0426%
+T1 | Iteration 459000 / Timestep 5.90149e-06 / Progress 27.1017%
+T1 | Iteration 460000 / Timestep 5.90147e-06 / Progress 27.1607%
+T1 | Iteration 461000 / Timestep 5.90145e-06 / Progress 27.2197%
+T1 | Iteration 462000 / Timestep 5.90143e-06 / Progress 27.2787%
+T1 | Iteration 463000 / Timestep 5.9014e-06 / Progress 27.3377%
+T1 | Iteration 464000 / Timestep 5.90138e-06 / Progress 27.3967%
+T1 | Iteration 465000 / Timestep 5.90136e-06 / Progress 27.4557%
+T1 | Iteration 466000 / Timestep 5.90134e-06 / Progress 27.5148%
+T1 | Iteration 467000 / Timestep 5.90134e-06 / Progress 27.5738%
+T1 | Iteration 468000 / Timestep 5.90132e-06 / Progress 27.6328%
+T1 | Iteration 469000 / Timestep 5.9013e-06 / Progress 27.6918%
+T1 | Iteration 470000 / Timestep 5.90128e-06 / Progress 27.7508%
+T1 | Iteration 471000 / Timestep 5.90126e-06 / Progress 27.8098%
+T1 | Iteration 472000 / Timestep 5.90124e-06 / Progress 27.8688%
+T1 | Iteration 473000 / Timestep 5.90121e-06 / Progress 27.9278%
+T1 | Iteration 474000 / Timestep 5.90119e-06 / Progress 27.9869%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 28, ITERATION 474223
+T1 |     Physical time       = 2.8 s 
+T1 |     Last time step      = 5.90121e-06 s 
+T1 |     Elapsed time        = 55 h 2 min 24 s 
+T1 |     AMR time            = 1 h 34 min 5 s 
+T1 |     Communication time  = 1 h 8 min 44 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 28... OK
+T1 | Iteration 475000 / Timestep 5.90117e-06 / Progress 28.0459%
+T1 | Iteration 476000 / Timestep 5.90117e-06 / Progress 28.1049%
+T1 | Iteration 477000 / Timestep 5.90115e-06 / Progress 28.1639%
+T1 | Iteration 478000 / Timestep 5.90113e-06 / Progress 28.2229%
+T1 | Iteration 479000 / Timestep 5.90111e-06 / Progress 28.2819%
+T1 | Iteration 480000 / Timestep 5.90108e-06 / Progress 28.3409%
+T1 | Iteration 481000 / Timestep 5.90106e-06 / Progress 28.3999%
+T1 | Iteration 482000 / Timestep 5.90106e-06 / Progress 28.4589%
+T1 | Iteration 483000 / Timestep 5.90104e-06 / Progress 28.518%
+T1 | Iteration 484000 / Timestep 5.90102e-06 / Progress 28.577%
+T1 | Iteration 485000 / Timestep 5.90099e-06 / Progress 28.636%
+T1 | Iteration 486000 / Timestep 5.90097e-06 / Progress 28.695%
+T1 | Iteration 487000 / Timestep 5.90097e-06 / Progress 28.754%
+T1 | Iteration 488000 / Timestep 5.90095e-06 / Progress 28.813%
+T1 | Iteration 489000 / Timestep 5.90093e-06 / Progress 28.872%
+T1 | Iteration 490000 / Timestep 5.9009e-06 / Progress 28.931%
+T1 | Iteration 491000 / Timestep 5.90088e-06 / Progress 28.99%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 29, ITERATION 491169
+T1 |     Physical time       = 2.9 s 
+T1 |     Last time step      = 5.9009e-06 s 
+T1 |     Elapsed time        = 58 h 7 min 9 s 
+T1 |     AMR time            = 1 h 38 min 42 s 
+T1 |     Communication time  = 1 h 10 min 33 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 29... OK
+T1 | Iteration 492000 / Timestep 5.90088e-06 / Progress 29.049%
+T1 | Iteration 493000 / Timestep 5.90086e-06 / Progress 29.1081%
+T1 | Iteration 494000 / Timestep 5.90083e-06 / Progress 29.1671%
+T1 | Iteration 495000 / Timestep 5.9008e-06 / Progress 29.2261%
+T1 | Iteration 496000 / Timestep 5.90079e-06 / Progress 29.2851%
+T1 | Iteration 497000 / Timestep 5.90078e-06 / Progress 29.3441%
+T1 | Iteration 498000 / Timestep 5.90076e-06 / Progress 29.4031%
+T1 | Iteration 499000 / Timestep 5.90073e-06 / Progress 29.4621%
+T1 | Iteration 500000 / Timestep 5.90072e-06 / Progress 29.5211%
+T1 | Iteration 501000 / Timestep 5.90071e-06 / Progress 29.5801%
+T1 | Iteration 502000 / Timestep 5.90068e-06 / Progress 29.6391%
+T1 | Iteration 503000 / Timestep 5.90066e-06 / Progress 29.6981%
+T1 | Iteration 504000 / Timestep 5.90066e-06 / Progress 29.7571%
+T1 | Iteration 505000 / Timestep 5.90064e-06 / Progress 29.8161%
+T1 | Iteration 506000 / Timestep 5.90061e-06 / Progress 29.8751%
+T1 | Iteration 507000 / Timestep 5.90058e-06 / Progress 29.9342%
+T1 | Iteration 508000 / Timestep 5.90059e-06 / Progress 29.9932%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 30, ITERATION 508116
+T1 |     Physical time       = 3 s 
+T1 |     Last time step      = 5.90058e-06 s 
+T1 |     Elapsed time        = 61 h 26 min 3 s 
+T1 |     AMR time            = 1 h 43 min 33 s 
+T1 |     Communication time  = 1 h 12 min 37 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 30... OK
+T1 | Iteration 509000 / Timestep 5.90056e-06 / Progress 30.0522%
+T1 | Iteration 510000 / Timestep 5.90053e-06 / Progress 30.1112%
+T1 | Iteration 511000 / Timestep 5.90053e-06 / Progress 30.1702%
+T1 | Iteration 512000 / Timestep 5.9005e-06 / Progress 30.2292%
+T1 | Iteration 513000 / Timestep 5.90048e-06 / Progress 30.2882%
+T1 | Iteration 514000 / Timestep 5.90048e-06 / Progress 30.3472%
+T1 | Iteration 515000 / Timestep 5.90045e-06 / Progress 30.4062%
+T1 | Iteration 516000 / Timestep 5.90042e-06 / Progress 30.4652%
+T1 | Iteration 517000 / Timestep 5.90043e-06 / Progress 30.5242%
+T1 | Iteration 518000 / Timestep 5.9004e-06 / Progress 30.5832%
+T1 | Iteration 519000 / Timestep 5.90037e-06 / Progress 30.6422%
+T1 | Iteration 520000 / Timestep 5.90037e-06 / Progress 30.7012%
+T1 | Iteration 521000 / Timestep 5.90034e-06 / Progress 30.7602%
+T1 | Iteration 522000 / Timestep 5.90031e-06 / Progress 30.8192%
+T1 | Iteration 523000 / Timestep 5.90031e-06 / Progress 30.8782%
+T1 | Iteration 524000 / Timestep 5.90028e-06 / Progress 30.9372%
+T1 | Iteration 525000 / Timestep 5.90026e-06 / Progress 30.9962%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 31, ITERATION 525064
+T1 |     Physical time       = 3.1 s 
+T1 |     Last time step      = 5.90027e-06 s 
+T1 |     Elapsed time        = 64 h 45 min 30 s 
+T1 |     AMR time            = 1 h 48 min 30 s 
+T1 |     Communication time  = 1 h 15 min 13 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 31... OK
+T1 | Iteration 526000 / Timestep 5.90026e-06 / Progress 31.0552%
+T1 | Iteration 527000 / Timestep 5.90022e-06 / Progress 31.1142%
+T1 | Iteration 528000 / Timestep 5.90023e-06 / Progress 31.1732%
+T1 | Iteration 529000 / Timestep 5.90019e-06 / Progress 31.2322%
+T1 | Iteration 530000 / Timestep 5.90016e-06 / Progress 31.2912%
+T1 | Iteration 531000 / Timestep 5.90016e-06 / Progress 31.3502%
+T1 | Iteration 532000 / Timestep 5.90013e-06 / Progress 31.4092%
+T1 | Iteration 533000 / Timestep 5.90014e-06 / Progress 31.4682%
+T1 | Iteration 534000 / Timestep 5.9001e-06 / Progress 31.5272%
+T1 | Iteration 535000 / Timestep 5.90008e-06 / Progress 31.5863%
+T1 | Iteration 536000 / Timestep 5.90007e-06 / Progress 31.6453%
+T1 | Iteration 537000 / Timestep 5.90004e-06 / Progress 31.7043%
+T1 | Iteration 538000 / Timestep 5.90004e-06 / Progress 31.7633%
+T1 | Iteration 539000 / Timestep 5.9e-06 / Progress 31.8223%
+T1 | Iteration 540000 / Timestep 5.90001e-06 / Progress 31.8813%
+T1 | Iteration 541000 / Timestep 5.89997e-06 / Progress 31.9403%
+T1 | Iteration 542000 / Timestep 5.89997e-06 / Progress 31.9993%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 32, ITERATION 542013
+T1 |     Physical time       = 3.2 s 
+T1 |     Last time step      = 5.89997e-06 s 
+T1 |     Elapsed time        = 68 h 10 min 17 s 
+T1 |     AMR time            = 1 h 53 min 34 s 
+T1 |     Communication time  = 1 h 18 min 15 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 32... OK
+T1 | Iteration 543000 / Timestep 5.89994e-06 / Progress 32.0583%
+T1 | Iteration 544000 / Timestep 5.89991e-06 / Progress 32.1173%
+T1 | Iteration 545000 / Timestep 5.8999e-06 / Progress 32.1762%
+T1 | Iteration 546000 / Timestep 5.89987e-06 / Progress 32.2352%
+T1 | Iteration 547000 / Timestep 5.89987e-06 / Progress 32.2942%
+T1 | Iteration 548000 / Timestep 5.89983e-06 / Progress 32.3532%
+T1 | Iteration 549000 / Timestep 5.89984e-06 / Progress 32.4122%
+T1 | Iteration 550000 / Timestep 5.8998e-06 / Progress 32.4712%
+T1 | Iteration 551000 / Timestep 5.8998e-06 / Progress 32.5302%
+T1 | Iteration 552000 / Timestep 5.89976e-06 / Progress 32.5892%
+T1 | Iteration 553000 / Timestep 5.89976e-06 / Progress 32.6482%
+T1 | Iteration 554000 / Timestep 5.89972e-06 / Progress 32.7072%
+T1 | Iteration 555000 / Timestep 5.89972e-06 / Progress 32.7662%
+T1 | Iteration 556000 / Timestep 5.89968e-06 / Progress 32.8252%
+T1 | Iteration 557000 / Timestep 5.89969e-06 / Progress 32.8842%
+T1 | Iteration 558000 / Timestep 5.89966e-06 / Progress 32.9432%
+T1 | -------------------------------------------
+T1 | RESULTS FILE NUMBER: 33, ITERATION 558963
+T1 |     Physical time       = 3.3 s 
+T1 |     Last time step      = 5.89965e-06 s 
+T1 |     Elapsed time        = 71 h 46 min 24 s 
+T1 |     AMR time            = 1 h 58 min 59 s 
+T1 |     Communication time  = 1 h 21 min 53 s 
+T1 | -------------------------------------------
+T1 | Printing file number: 33... OK
+T1 | Iteration 559000 / Timestep 5.89965e-06 / Progress 33.0022%
+T1 | Iteration 560000 / Timestep 5.89963e-06 / Progress 33.0612%
+T1 | Iteration 561000 / Timestep 5.89961e-06 / Progress 33.1202%
+T1 | Iteration 562000 / Timestep 5.8996e-06 / Progress 33.1792%
+T1 | Iteration 563000 / Timestep 5.89957e-06 / Progress 33.2382%
+T1 | Iteration 564000 / Timestep 5.89957e-06 / Progress 33.2972%
+T1 | Iteration 565000 / Timestep 5.89952e-06 / Progress 33.3562%
+T1 | Iteration 566000 / Timestep 5.89952e-06 / Progress 33.4152%
+T1 | Iteration 567000 / Timestep 5.89949e-06 / Progress 33.4742%
+T1 | Iteration 568000 / Timestep 5.89948e-06 / Progress 33.5332%
+T1 | Iteration 569000 / Timestep 5.89947e-06 / Progress 33.5922%
+T1 | Iteration 570000 / Timestep 5.89944e-06 / Progress 33.6512%
+T1 | Iteration 571000 / Timestep 5.89944e-06 / Progress 33.7102%
+T1 | Iteration 572000 / Timestep 5.89939e-06 / Progress 33.7692%
+T1 | Iteration 573000 / Timestep 5.89939e-06 / Progress 33.8282%
+T1 | Iteration 574000 / Timestep 5.89938e-06 / Progress 33.8871%
+ 

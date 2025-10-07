@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding = "UTF-8" standalone = "yes"?>
 <computationParam>
-	<run>PUEqRayleighTaylorPlasmaConditions_10_7_25</run>
+	<run>PUEqRayleighTaylorPlasmaConditions_10/7/25</run>
 	<outputMode format="XML" binary="false" precision="16"/>
 	<timeControlMode iterations="false">
 		<iterations number="20" iterFreq="1"/>

@@ -36,12 +36,12 @@
     <state name="flow">
         <!-- Upper domain -->
         <material type="fluid" EOS="IG_RT_dynamicViscosity.xml">
-            <dataFluid alpha="0.5" density="1000"/>
+            <dataFluid alpha="0.5" density="99.9"/>
         </material>
 
-        <!-- Lower domain --> 
+        <!-- Lower domain -->
         <material type="fluid" EOS="IG_RT_dynamicViscosity.xml">
-            <dataFluid alpha="0.5" density="20"/>
+            <dataFluid alpha="0.5" density="0.1"/>
         </material>
 
         <mixture>

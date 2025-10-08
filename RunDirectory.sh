@@ -20,10 +20,15 @@ echo "=== Starting ECOGEN simulation: $RUNNAME ==="
 RESULTS_DIR="$RUNDIR/results/$RUNNAME"
 mkdir -p "$RESULTS_DIR"
 
-# 3. Copy source files for record-keeping
-cp src/Geometries/GDEntireDomainWithParticularities.* "$RESULTS_DIR/"
+# --- External logging directory ---
+EXTERNAL_BASE="Z:/home/sdcfd/SimulationLogs/RT"
+EXTERNAL_DIR="$EXTERNAL_BASE/$RUNNAME"
+mkdir -p "$EXTERNAL_DIR"
 
-echo "=== Source files copied to $RESULTS_DIR ==="
+# 3. Copy source files for record-keeping (only to SimulationLogs)
+cp src/Geometries/GDEntireDomainWithParticularities.* "$EXTERNAL_DIR/"
+
+echo "=== Source files copied to $EXTERNAL_DIR ==="
 
 # 4. Run ECOGEN with nohup in background
 nohup mpirun -np $NP --use-hwthread-cpus "$ECOGEN_EXEC" "$RUNDIR" > "$RESULTS_DIR/output.log" 2>&1 &
@@ -33,3 +38,11 @@ echo "Simulation started in background (PID=$SIM_PID). Output is in $RESULTS_DIR
 
 # 5. Follow the output live (Ctrl-C to stop watching, simulation keeps running)
 tail -f "$RESULTS_DIR/output.log"
+
+# 6. After simulation completes, copy results folder externally
+wait $SIM_PID
+
+EXTERNAL_RESULTS="$EXTERNAL_BASE"
+cp -r "$RESULTS_DIR/"* "$EXTERNAL_RESULTS/"
+
+echo "=== Simulation complete. Results copied to: $EXTERNAL_RESULTS ==="

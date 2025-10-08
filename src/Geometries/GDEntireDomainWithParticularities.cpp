@@ -69,9 +69,9 @@ bool GDEntireDomainWithParticularities::belong(Coord& /*posElement*/, const int&
   //--------------------------------
   // return true; //always belong to entire domain
 
-  //5. Rayleigh-Taylor instability
-  //------------------------------
-  // return true; //always belong to entire domain
+  5. Rayleigh-Taylor instability
+  ------------------------------
+  return true; //always belong to entire domain
 
   //6. Blast-wave equation
   //----------------------
@@ -149,8 +149,8 @@ void GDEntireDomainWithParticularities::fillIn(Cell* cell) const
     // cell->getMixture()->setVelocity(perturbedVelocity);
     // }
 
-    // 5. Rayleigh-Taylor instability
-    // ------------------------------
+    5. Rayleigh-Taylor instability
+    ------------------------------
     // Sinus shape parameters
     const double pi = std::acos(-1); // Pi constant
     
@@ -159,8 +159,8 @@ void GDEntireDomainWithParticularities::fillIn(Cell* cell) const
     // double h = 0.7;                  // Height of the interface
 
     // * R-T same dynamic viscosity
-    double lambda = 100e-6;             // Width of the domain
-    double h = 500e-6;                 // Height of the interface
+    double lambda = 2.5;             // Width of the domain
+    double h = 12.5;                 // Height of the interface
 
     double k = 2 * pi / lambda;      // Wave-number
     int nx = 1000;                   // Nb of points to plot interface function
@@ -178,7 +178,7 @@ void GDEntireDomainWithParticularities::fillIn(Cell* cell) const
     // double g = 9.81, ly = 1.2;
 
     // * R-T same dynamic viscosity
-    double g = 1e11, ly = 1000e-6; 
+    double g = 1., ly = 25.; 
 
     std::vector<double> interfaceX, interfaceY; // Interface fn coordinates
     for (int i = 0; i < nx; i++) {

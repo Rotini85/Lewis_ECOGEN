@@ -69,8 +69,8 @@ bool GDEntireDomainWithParticularities::belong(Coord& /*posElement*/, const int&
   //--------------------------------
   // return true; //always belong to entire domain
 
-  5. Rayleigh-Taylor instability
-  ------------------------------
+  // 5. Rayleigh-Taylor instability
+  // ------------------------------
   return true; //always belong to entire domain
 
   //6. Blast-wave equation
@@ -149,8 +149,8 @@ void GDEntireDomainWithParticularities::fillIn(Cell* cell) const
     // cell->getMixture()->setVelocity(perturbedVelocity);
     // }
 
-    5. Rayleigh-Taylor instability
-    ------------------------------
+    // 5. Rayleigh-Taylor instability
+    // ------------------------------
     // Sinus shape parameters
     const double pi = std::acos(-1); // Pi constant
     

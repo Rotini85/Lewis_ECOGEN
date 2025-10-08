@@ -21,7 +21,7 @@ RESULTS_DIR="$RUNDIR/results/$RUNNAME"
 mkdir -p "$RESULTS_DIR"
 
 # --- External logging directory ---
-EXTERNAL_BASE="Z:/home/sdcfd/SimulationLogs/RT"
+EXTERNAL_BASE="/home/sdcfd/SimulationLogs/RT"
 EXTERNAL_DIR="$EXTERNAL_BASE/$RUNNAME"
 mkdir -p "$EXTERNAL_DIR"
 
